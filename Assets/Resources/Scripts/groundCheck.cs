@@ -24,8 +24,6 @@ public class groundCheck : MonoBehaviour {
 	}
 
 	void OnTriggerExit2D(Collider2D col) {
-		print ("inside before this " + player.grounded);
 		player.grounded = false;
-		print ("after " + player.grounded);
 	}
 }

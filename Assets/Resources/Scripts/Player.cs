@@ -41,7 +41,6 @@ public class Player : MonoBehaviour {
 		}
 
 		GBS.Value = currentHealth;
-		print (currentHealth);
 
 		/*if (Input.GetKey ("up")) {
 			print ("inside get key");

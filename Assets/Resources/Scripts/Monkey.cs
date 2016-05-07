@@ -24,7 +24,7 @@ public class Monkey : MonoBehaviour {
 			if (currentTime - prevProj > .1f) {
 				prevProj = currentTime;
 				GameObject e = Instantiate (projectile) as GameObject;
-				EggBehavior egg = e.GetComponent<EggBehavior> ();
+				BananaBehavior egg = e.GetComponent<BananaBehavior> ();
 				if (null != egg) {
 					e.transform.position = transform.position;
 					egg.SetForwardDirection (NewDirection());

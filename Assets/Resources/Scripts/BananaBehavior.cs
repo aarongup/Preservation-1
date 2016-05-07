@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EggBehavior : MonoBehaviour {
+public class BananaBehavior : MonoBehaviour {
 
 	private float speed = 10f;
 	private float angle;
@@ -15,14 +15,10 @@ public class EggBehavior : MonoBehaviour {
 	void Update () {
 		//transform.Rotate (0, 0, 360f * Time.deltaTime);
 		transform.position += (speed * Time.smoothDeltaTime) * transform.up;
-		//GlobalBehavior globalBehavior = GameObject.Find ("GameManager").GetComponent<GlobalBehavior>();
-		/*
-		GlobalBehavior.WorldBoundStatus status =
-			globalBehavior.ObjectTransformCollideWorldBound(transform);
-		print (status);
-		if (status != GlobalBehavior.WorldBoundStatus.Inside) {
-			Destroy (this.gameObject);
-		}*/
+
+		if (!GetComponent<SpriteRenderer>().isVisible) {
+			Destroy (gameObject);
+		}
 
 	}
 
