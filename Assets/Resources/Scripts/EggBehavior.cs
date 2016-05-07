@@ -35,6 +35,9 @@ public class EggBehavior : MonoBehaviour {
 		// Only care if hitting an Egg (vs. hitting another Enemy!
 		if (other.gameObject.name == "Player") {
 			Destroy(this.gameObject);
+			GameObject p =  GameObject.Find ("Player");
+			p.SendMessage ("decreaseHealth", .10f);
+			//p.currentHealth -= .10f;
 		}
 	}
 

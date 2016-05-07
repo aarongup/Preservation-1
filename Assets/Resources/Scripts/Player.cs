@@ -13,8 +13,8 @@ public class Player : MonoBehaviour {
 	public bool canDoubleJump;
 
 
-	public int currentHealth;
-	public int maxHealth = 100;
+	public float currentHealth;
+	public float maxHealth = 1f; //1 repersents full, 90% health = .9
 
 	private Rigidbody2D rb2d;
 	private Animator anim;
@@ -40,10 +40,13 @@ public class Player : MonoBehaviour {
 			Die ();
 		}
 
-		if (Input.GetKey ("up")) {
+		GBS.Value = currentHealth;
+		print (currentHealth);
+
+		/*if (Input.GetKey ("up")) {
 			print ("inside get key");
 			GBS.Value = 0.5f;
-		}
+		}*/
 
 		//anim.setBool("Grounded", grounded);
 		//anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
@@ -101,6 +104,11 @@ public class Player : MonoBehaviour {
 	void Die() {
 		//after dieing it resets to initial screen
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+	}
+
+	void decreaseHealth(float damage) {
+		//do error checks
+		currentHealth -= damage;
 	}
 		
 }	
