@@ -99,7 +99,6 @@ public class GUIBarScript : MonoBehaviour {
 	//this method will redraw the bar
 	private void UpdateBar()
 	{
-		print ("inside update bar");
 		//update the gradient
 		UpdateGradient ();
 

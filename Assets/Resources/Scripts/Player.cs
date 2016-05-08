@@ -23,7 +23,6 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//GBS = GetComponent<GUIBarScript>();
 		rb2d = GetComponent<Rigidbody2D> ();
 		anim = gameObject.GetComponent<Animator> ();
 		currentHealth = maxHealth;
@@ -41,12 +40,7 @@ public class Player : MonoBehaviour {
 		}
 
 		GBS.Value = currentHealth;
-		print (currentHealth);
-
-		/*if (Input.GetKey ("up")) {
-			print ("inside get key");
-			GBS.Value = 0.5f;
-		}*/
+		print ("current health is " + currentHealth);
 
 		//anim.setBool("Grounded", grounded);
 		//anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
@@ -111,5 +105,8 @@ public class Player : MonoBehaviour {
 		currentHealth -= damage;
 	}
 		
+	void OnGUI() {
+		GUI.Label (new Rect (0, 0, 100, 200), "Health " + (int)Mathf.Ceil (currentHealth * 100));
+	}
 }	
 

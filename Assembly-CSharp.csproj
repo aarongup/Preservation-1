@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DAD09798-3094-5023-03EF-24239AC55B08}</ProjectGuid>
+    <ProjectGuid>{CF1D89BE-4FFC-60AB-7A15-8C4D4B6D9216}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -50,6 +50,7 @@
      <Compile Include="Assets\GradientGUIBars\Script\MoreButtonScript.cs" />
      <Compile Include="Assets\GradientGUIBars\Script\MoveCameraScript.cs" />
      <Compile Include="Assets\Resources\Scripts\EggBehavior.cs" />
+     <Compile Include="Assets\Resources\Scripts\GlobalBehavior.cs" />
      <Compile Include="Assets\Resources\Scripts\Monkey.cs" />
      <Compile Include="Assets\Resources\Scripts\Player.cs" />
      <Compile Include="Assets\Resources\Scripts\groundCheck.cs" />
