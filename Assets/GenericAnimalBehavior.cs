@@ -13,7 +13,7 @@ public class GenericAnimalBehavior : MonoBehaviour {
    Texture2D blackPixel;
    Texture2D barEmpty;
    Texture2D barFull;
-   const float mScanBarOffsetY = 7; //offset from the objects position in y direction
+   const float mScanBarOffsetY = .75f; //offset from the objects position in y direction
 
 	// Use this for initialization
 	void Start () {

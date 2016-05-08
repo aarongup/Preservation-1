@@ -3,14 +3,17 @@ using System.Collections;
 
 public class ScannerBehavior : MonoBehaviour {
    LineRenderer visableScannerLine;
-   float mScannerRange = 50;
+   float mScannerRange = 4;
    float mScanningMultiplier = 1;
+   float startWidth = .1f;
+   float endWidth = .25f;
 	void Start () {
       visableScannerLine = gameObject.AddComponent<LineRenderer>();
       visableScannerLine.enabled = true;
       visableScannerLine.SetColors(Color.green, Color.blue);
-      visableScannerLine.SetWidth(.25f, .5f);
-	}
+      visableScannerLine.SetWidth(startWidth, endWidth);
+      visableScannerLine.material = new Material(Shader.Find("Particles/Additive"));
+   }
 
    // Update is called once per frame
    void Update() {
