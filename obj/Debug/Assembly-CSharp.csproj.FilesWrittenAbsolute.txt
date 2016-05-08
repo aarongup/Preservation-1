@@ -1,0 +1,13 @@
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/UnityEngine.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/UnityEditor.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/Mono.Cecil.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/Unity.DataContract.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/aarongupta/Desktop/GitHub/Preservation/Temp/bin/Debug/Mono.Cecil.Mdb.dll

@@ -6,8 +6,11 @@ using System.Collections;
 public class Monkey : MonoBehaviour {
 
 	public GameObject projectile = null;
-	private float prevProj;
 	public Player player;
+
+	public const float targetRadius = 3f;
+	public const float projectileInterval = .5f;
+	private float prevProj;
 
 	// Use this for initialization
 	void Start () {
@@ -19,9 +22,9 @@ public class Monkey : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if ((player.transform.position - transform.position).magnitude < 3) {
+		if ((player.transform.position - transform.position).magnitude < targetRadius) {
 			float currentTime = Time.realtimeSinceStartup;
-			if (currentTime - prevProj > .1f) {
+			if (currentTime - prevProj > projectileInterval) {
 				prevProj = currentTime;
 				GameObject e = Instantiate (projectile) as GameObject;
 				BananaBehavior egg = e.GetComponent<BananaBehavior> ();
