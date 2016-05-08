@@ -40,7 +40,6 @@ public class Player : MonoBehaviour {
 		}
 
 		GBS.Value = currentHealth;
-		print ("current health is " + currentHealth);
 
 		//anim.setBool("Grounded", grounded);
 		//anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
