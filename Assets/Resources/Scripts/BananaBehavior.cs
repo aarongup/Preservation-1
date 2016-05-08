@@ -29,7 +29,7 @@ public class BananaBehavior : MonoBehaviour {
 			GameObject p =  GameObject.Find ("Player");
 			p.SendMessage ("decreaseHealth", .10f);
 		}
-      else if (other.gameObject.tag == "Ground") {
+		else if (other.gameObject.layer == 8) {
          Destroy(gameObject);
       }
 	}
