@@ -12,7 +12,7 @@ public class ScannerBehavior : MonoBehaviour {
       visableScannerLine.enabled = true;
       visableScannerLine.SetColors(Color.green, Color.blue);
       visableScannerLine.SetWidth(startWidth, endWidth);
-      visableScannerLine.material = new Material(Shader.Find("Particles/Additive"));
+      visableScannerLine.material = Resources.Load("Scanner Mat") as Material; ;
    }
 
    // Update is called once per frame

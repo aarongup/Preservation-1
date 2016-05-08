@@ -69,17 +69,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GenericAnimalBehavior.cs" />
     <Compile Include="Assets\GradientGUIBars\Script\ControlGUIScript.cs" />
     <Compile Include="Assets\GradientGUIBars\Script\GUIBarScript.cs" />
     <Compile Include="Assets\GradientGUIBars\Script\MoreButtonScript.cs" />
     <Compile Include="Assets\GradientGUIBars\Script\MoveCameraScript.cs" />
     <Compile Include="Assets\Resources\Scripts\BananaBehavior.cs" />
+    <Compile Include="Assets\Resources\Scripts\CameraScript.cs" />
+    <Compile Include="Assets\Resources\Scripts\GenericAnimalBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\GlobalBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\Monkey.cs" />
     <Compile Include="Assets\Resources\Scripts\Player.cs" />
+    <Compile Include="Assets\Resources\Scripts\PushBehavior.cs" />
+    <Compile Include="Assets\Resources\Scripts\ScannerBehavior.cs" />
+    <Compile Include="Assets\Resources\Scripts\Toggle.cs" />
+    <Compile Include="Assets\Resources\Scripts\TogglePlatform.cs" />
     <Compile Include="Assets\Resources\Scripts\groundCheck.cs" />
-    <Compile Include="Assets\ScannerBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GradientGUIBars\ReadMe\AboutFonts.txt" />

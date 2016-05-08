@@ -41,15 +41,13 @@ public class Player : MonoBehaviour {
 
 		GBS.Value = currentHealth;
 
-		//anim.setBool("Grounded", grounded);
-		//anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
+      Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 		//To flip sprite based on direction 
-		if (Input.GetAxis ("Horizontal") < -0.1f) {
+		if (mousePosition.x < transform.position.x) {
 			transform.localScale = new Vector3 (-.193f, .193f, 1);
 		}
-
-		if (Input.GetAxis ("Horizontal") > 0.1f) {
+		else if (mousePosition.x > transform.position.x) {
 			transform.localScale = new Vector3 (.193f, .193f, 1);
 		}
 
