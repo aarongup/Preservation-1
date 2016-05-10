@@ -12,11 +12,11 @@ public class CameraScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 		smoothTime = .05f;
 		player = GameObject.FindGameObjectWithTag ("Player");
-		minCameraPos = new Vector3 (-100f, -100f, -10f);
-		maxCameraPos = new Vector3 (100f, 100f, -10f);
+		minCameraPos = new Vector3 (6f, 4.5f, -10f);
+		maxCameraPos = new Vector3 (100f, 10f, -10f);
 	}
 
 	// Update is called once per frame
