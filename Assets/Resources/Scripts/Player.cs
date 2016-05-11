@@ -45,13 +45,15 @@ public class Player : MonoBehaviour {
 		//anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
 
 		//To flip sprite based on direction 
-		if (Input.GetAxis ("Horizontal") < -0.1f) {
-			transform.localScale = new Vector3 (-.193f, .193f, 1);
-		}
+		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-		if (Input.GetAxis ("Horizontal") > 0.1f) {
-			transform.localScale = new Vector3 (.193f, .193f, 1);
-		}
+		//To flip sprite based on direction 
+			if (mousePosition.x < transform.position.x) {
+				transform.localScale = new Vector3 (-.193f, .193f, 1);
+			}
+			else if (mousePosition.x > transform.position.x) {
+				transform.localScale = new Vector3 (.193f, .193f, 1);
+			}
 
 		if (Input.GetButtonDown ("Jump")) {
 			if (grounded) {
