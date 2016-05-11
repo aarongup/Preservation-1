@@ -4,7 +4,7 @@ using System.Collections;
 public class SightScript : MonoBehaviour {
 
 	public GameObject player;
-	public float angleOfView = 90f;
+	public float angleOfView = 20f;
 	public bool playerSpotted = false;
 	public bool facingRight = true;
 	public bool targetBlocked;
