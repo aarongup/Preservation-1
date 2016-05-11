@@ -107,6 +107,7 @@ public class Player : MonoBehaviour {
 	}
 		
 	void OnGUI() {
+		GUI.contentColor = Color.green;
 		GUI.Label (new Rect (0, 0, 100, 200), "Health " + (int)Mathf.Ceil (currentHealth * 100));
 	}
 }	

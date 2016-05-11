@@ -24,16 +24,16 @@ public class CameraScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-      /*
+      
 		GameObject echoText = GameObject.Find ("numberScanned");
 		UnityEngine.UI.Text gui = echoText.GetComponent<UnityEngine.UI.Text> ();
       
-		if (animalCount >= 2) {
+		if (animalCount >= 5) {
 			gui.text = "WIN";
 		} else {
 			gui.text = "Animals Scanned " + animalCount;
 		}
-      */
+      
 		float posX = Mathf.SmoothDamp (transform.position.x, player.transform.position.x, ref velocity.x, smoothTime);
 		float posY = Mathf.SmoothDamp (transform.position.y, player.transform.position.y, ref velocity.y, smoothTime);
       

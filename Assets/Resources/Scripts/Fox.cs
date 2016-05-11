@@ -130,6 +130,10 @@ public class Fox : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{		
+		if (other.gameObject.name == "Player") {
+			GameObject p =  GameObject.Find ("Player");
+			p.SendMessage ("decreaseHealth", .15f);
+		}
 
 		if (other.gameObject.layer == LayerMask.NameToLayer("Ground") && jumped == true) {
 			jumped = false;
