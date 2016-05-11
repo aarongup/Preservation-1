@@ -9,12 +9,12 @@ public class Fox : MonoBehaviour {
 	}
 
 	public LayerMask foxMask;
-	private SightScript sight;
+	public SightScript sight;
 	private State curState;
 	private Rigidbody2D myRB;
 	private float myWidth;
 	private Vector3 returnPoint;
-	private GameObject player;
+	public GameObject player;
 	public bool jumped;
 	public bool isBurrowed;
 	public Sprite foxSprite;

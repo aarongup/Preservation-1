@@ -18,7 +18,7 @@ public class CameraScript : MonoBehaviour {
 		smoothTime = .05f;
 		player = GameObject.FindGameObjectWithTag ("Player");
 		minCameraPos = new Vector3 (6f, 4.5f, -10f);
-		maxCameraPos = new Vector3 (100f, 10f, -10f);
+		maxCameraPos = new Vector3 (60f, 9.5f, -10f);
 	}
 
 	// Update is called once per frame
