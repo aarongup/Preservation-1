@@ -60,4 +60,11 @@ public class Monkey : MonoBehaviour {
 		newDir.Normalize();
 		return newDir;
 	}
+
+	public void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.gameObject.name == "Player") {
+			GameObject p =  GameObject.Find ("Player");
+			p.SendMessage ("decreaseHealth", .05f);
+		}
+	}
 }
