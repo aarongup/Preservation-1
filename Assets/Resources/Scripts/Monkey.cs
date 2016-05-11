@@ -7,6 +7,7 @@ public class Monkey : MonoBehaviour {
 
 	public GameObject projectile = null;
 	public Player player;
+	private SightScript mySight;
 
 	public const float targetRadius = 3f;
 	public const float projectileInterval = .5f;
@@ -15,6 +16,7 @@ public class Monkey : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		prevProj = Time.realtimeSinceStartup;
+		mySight = gameObject.GetComponent<SightScript> ();
 		if (null == projectile) {
 			projectile = Resources.Load ("Prefabs/projectile") as GameObject;
 		}
@@ -22,7 +24,7 @@ public class Monkey : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if ((player.transform.position - transform.position).magnitude < targetRadius) {
+		if (mySight.playerSpotted) {
 			float currentTime = Time.realtimeSinceStartup;
 			if (currentTime - prevProj > projectileInterval) {
 				prevProj = currentTime;
