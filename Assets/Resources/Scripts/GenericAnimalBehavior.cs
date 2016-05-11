@@ -14,6 +14,7 @@ public class GenericAnimalBehavior : MonoBehaviour {
    Texture2D barEmpty;
    Texture2D barFull;
    const float mScanBarOffsetY = .75f; //offset from the objects position in y direction
+	public Fox foxScript = null;
 
 	// Use this for initialization
 	void Start () {
@@ -44,6 +45,7 @@ public class GenericAnimalBehavior : MonoBehaviour {
       barFull.SetPixels(pixels);
       barFull.Apply();
 
+		foxScript = gameObject.GetComponent<Fox> ();
    }
 	
 	// Update is called once per frame
@@ -63,10 +65,17 @@ public class GenericAnimalBehavior : MonoBehaviour {
       scanned(1);
    }
    public void scanned(float multiplier) {
-      mCurrentScanValue += mScanRate * multiplier * Time.deltaTime;
-      if(mCurrentScanValue > mTargetScanValue) {
-         mCurrentScanValue = mTargetScanValue;
-      }
+		if (foxScript == null) {
+			mCurrentScanValue += mScanRate * multiplier * Time.deltaTime;
+			if (mCurrentScanValue > mTargetScanValue) {
+				mCurrentScanValue = mTargetScanValue;
+			}
+		} else if (!foxScript.isBurrowed && foxScript != null) {
+			mCurrentScanValue += mScanRate * multiplier * Time.deltaTime;
+			if (mCurrentScanValue > mTargetScanValue) {
+				mCurrentScanValue = mTargetScanValue;
+			}
+		}
    }
 
    void OnGUI() {
