@@ -49,7 +49,9 @@ public class GenericAnimalBehavior : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	   if(mCurrentScanValue >= mTargetScanValue) {
-         Destroy(gameObject);
+			CameraScript globalBehavior = GameObject.Find ("Main Camera").GetComponent<CameraScript>();
+			globalBehavior.animalCount++;
+         	Destroy(gameObject);
       }
 
       //update position of scan progress bar based on the animal's position
