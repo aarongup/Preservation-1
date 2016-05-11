@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CameraScript : MonoBehaviour {
 
+	public int animalCount;
+
 	private float smoothTime;
 	private GameObject player;
 	private Vector2 velocity;
@@ -12,7 +14,7 @@ public class CameraScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		animalCount = 0;
 		smoothTime = .05f;
 		player = GameObject.FindGameObjectWithTag ("Player");
 		minCameraPos = new Vector3 (6f, 4.5f, -10f);
@@ -21,7 +23,16 @@ public class CameraScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-	
+
+		GameObject echoText = GameObject.Find ("numberScanned");
+		UnityEngine.UI.Text gui = echoText.GetComponent<UnityEngine.UI.Text> ();
+
+		if (animalCount >= 2) {
+			gui.text = "WIN";
+		} else {
+			gui.text = "Animals Scanned " + animalCount;
+		}
+
 		float posX = Mathf.SmoothDamp (transform.position.x, player.transform.position.x, ref velocity.x, smoothTime);
 		float posY = Mathf.SmoothDamp (transform.position.y, player.transform.position.y, ref velocity.y, smoothTime);
 

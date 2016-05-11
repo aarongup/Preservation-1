@@ -53,7 +53,7 @@ public class Player : MonoBehaviour {
 			transform.localScale = new Vector3 (.193f, .193f, 1);
 		}
 
-		if (Input.GetButtonDown ("Jump")) {
+		if (Input.GetButtonDown ("Jump") || Input.GetKeyDown("w")) {
 			if (grounded) {
 				rb2d.AddForce (Vector2.up * jumpPower * 1.5f);
 				canDoubleJump = true;
