@@ -32,7 +32,7 @@ public class TogglePlatform : MonoBehaviour {
 	void Update () {
 
 		timer -= Time.deltaTime;
-		if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift) && timer <= 0) {
+		if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) {
 			swapState ();
 		}
 
