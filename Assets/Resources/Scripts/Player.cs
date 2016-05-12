@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
 
 	public bool grounded;
 	public bool canDoubleJump;
+	public bool airborne;
 
 
 	public float currentHealth;
@@ -27,6 +28,7 @@ public class Player : MonoBehaviour {
 		anim = gameObject.GetComponent<Animator> ();
 		currentHealth = maxHealth;
 		canDoubleJump = false; 
+		airborne = false;
 
 	}
 
@@ -59,10 +61,11 @@ public class Player : MonoBehaviour {
 		if (Input.GetButtonDown ("Jump") || Input.GetKeyDown("w")) {
 			if (grounded) {
 				rb2d.AddForce (Vector2.up * jumpPower * 1.5f);
+				airborne = true;
 			}
 			else {
-				if (canDoubleJump) {
-					canDoubleJump = false;
+				if (canDoubleJump && airborne) {
+					airborne = false;
 					rb2d.velocity = new Vector2 (rb2d.velocity.x, 0);
 					rb2d.AddForce (Vector2.up * jumpPower * 1.5f);
 				}
