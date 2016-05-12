@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
 
 
 	public float currentHealth;
-	public float maxHealth = 1f; //1 repersents full, 90% health = .9
+	public float maxHealth = 2f; //1 repersents full, 90% health = .9
 
 	private Rigidbody2D rb2d;
 	private Animator anim;
@@ -26,9 +26,10 @@ public class Player : MonoBehaviour {
 		rb2d = GetComponent<Rigidbody2D> ();
 		anim = gameObject.GetComponent<Animator> ();
 		currentHealth = maxHealth;
-	
+		canDoubleJump = false; 
+
 	}
-		
+
 	// Update is called once per frame
 	void Update () {
 		if (currentHealth > maxHealth) {
@@ -48,17 +49,16 @@ public class Player : MonoBehaviour {
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 		//To flip sprite based on direction 
-			if (mousePosition.x < transform.position.x) {
-				transform.localScale = new Vector3 (-.193f, .193f, 1);
-			}
-			else if (mousePosition.x > transform.position.x) {
-				transform.localScale = new Vector3 (.193f, .193f, 1);
-			}
+		if (mousePosition.x < transform.position.x) {
+			transform.localScale = new Vector3 (-.193f, .193f, 1);
+		}
+		else if (mousePosition.x > transform.position.x) {
+			transform.localScale = new Vector3 (.193f, .193f, 1);
+		}
 
 		if (Input.GetButtonDown ("Jump") || Input.GetKeyDown("w")) {
 			if (grounded) {
 				rb2d.AddForce (Vector2.up * jumpPower * 1.5f);
-				canDoubleJump = true;
 			}
 			else {
 				if (canDoubleJump) {
@@ -105,10 +105,14 @@ public class Player : MonoBehaviour {
 		//do error checks
 		currentHealth -= damage;
 	}
-		
+
+	void activateDoubleJump() {
+		canDoubleJump = true;
+	}
+
 	void OnGUI() {
 		GUI.contentColor = Color.green;
-		GUI.Label (new Rect (0, 0, 100, 200), "Health " + (int)Mathf.Ceil (currentHealth * 100));
+		GUI.Label (new Rect (0, 0, 100, 200), "Health " + (int)Mathf.Ceil (currentHealth * 200));
 	}
 }	
 

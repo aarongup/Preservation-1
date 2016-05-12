@@ -1,9 +1,105 @@
 fileFormatVersion: 2
 guid: fe973ae74ddff4e479568eb1bb14580e
-timeCreated: 1463023986
+timeCreated: 1463030878
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Owl_0
+    21300002: Owl_1
+    21300004: Owl_2
+    21300006: Owl_3
+    21300008: Owl_4
+    21300010: Owl_5
+    21300012: Owl_6
+    21300014: Owl_7
+    21300016: Owl_8
+    21300018: Owl_9
+    21300020: Owl_10
+    21300022: Owl_11
+    21300024: Owl_12
+    21300026: Owl_13
+    21300028: Owl_14
+    21300030: Owl_15
+    21300032: Owl_16
+    21300034: Owl_17
+    21300036: Owl_18
+    21300038: Owl_19
+    21300040: Owl_20
+    21300042: Owl_21
+    21300044: Owl_22
+    21300046: Owl_23
+    21300048: Owl_24
+    21300050: Owl_25
+    21300052: Owl_26
+    21300054: Owl_27
+    21300056: Owl_28
+    21300058: Owl_29
+    21300060: Owl_30
+    21300062: Owl_31
+    21300064: Owl_32
+    21300066: Owl_33
+    21300068: Owl_34
+    21300070: Owl_35
+    21300072: Owl_36
+    21300074: Owl_37
+    21300076: Owl_38
+    21300078: Owl_39
+    21300080: Owl_40
+    21300082: Owl_41
+    21300084: Owl_42
+    21300086: Owl_43
+    21300088: Owl_44
+    21300090: Owl_45
+    21300092: Owl_46
+    21300094: Owl_47
+    21300096: Owl_48
+    21300098: Owl_49
+    21300100: Owl_50
+    21300102: Owl_51
+    21300104: Owl_52
+    21300106: Owl_53
+    21300108: Owl_54
+    21300110: Owl_55
+    21300112: Owl_56
+    21300114: Owl_57
+    21300116: Owl_58
+    21300118: Owl_59
+    21300120: Owl_60
+    21300122: Owl_61
+    21300124: Owl_62
+    21300126: Owl_63
+    21300128: Owl_64
+    21300130: Owl_65
+    21300132: Owl_66
+    21300134: Owl_67
+    21300136: Owl_68
+    21300138: Owl_69
+    21300140: Owl_70
+    21300142: Owl_71
+    21300144: Owl_72
+    21300146: Owl_73
+    21300148: Owl_74
+    21300150: Owl_75
+    21300152: Owl_76
+    21300154: Owl_77
+    21300156: Owl_78
+    21300158: Owl_79
+    21300160: Owl_80
+    21300162: Owl_81
+    21300164: Owl_82
+    21300166: Owl_83
+    21300168: Owl_84
+    21300170: Owl_85
+    21300172: Owl_86
+    21300174: Owl_87
+    21300176: Owl_88
+    21300178: Owl_89
+    21300180: Owl_90
+    21300182: Owl_91
+    21300184: Owl_92
+    21300186: Owl_93
+    21300188: Owl_94
+    21300190: Owl_95
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +126,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +134,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +145,1464 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Owl_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 343
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -17.5, y: -10.5}
+        - {x: -7.5, y: -20.5}
+        - {x: 10.5, y: -20.5}
+        - {x: 17.5, y: -16.5}
+        - {x: 17.5, y: 20.5}
+    - name: Owl_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 351
+        width: 77
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 336
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_3
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 343
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -17.5, y: -10.5}
+        - {x: -7.5, y: -20.5}
+        - {x: 10.5, y: -20.5}
+        - {x: 17.5, y: -16.5}
+        - {x: 17.5, y: 20.5}
+    - name: Owl_4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 351
+        width: 77
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_5
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 336
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_6
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 343
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -17.5, y: -10.5}
+        - {x: -7.5, y: -20.5}
+        - {x: 10.5, y: -20.5}
+        - {x: 17.5, y: -16.5}
+        - {x: 17.5, y: 20.5}
+    - name: Owl_7
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 351
+        width: 77
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_8
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 336
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_9
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 343
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -17.5, y: -10.5}
+        - {x: -7.5, y: -20.5}
+        - {x: 10.5, y: -20.5}
+        - {x: 17.5, y: -16.5}
+        - {x: 17.5, y: 20.5}
+    - name: Owl_10
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 351
+        width: 77
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_11
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 336
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 295
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 20}
+        - {x: -19.5, y: 9}
+        - {x: -19.5, y: -17}
+        - {x: -18.5, y: -17}
+        - {x: -8.5, y: -20}
+        - {x: 14.5, y: -20}
+        - {x: 19.5, y: -17}
+        - {x: 19.5, y: 3}
+        - {x: 13.5, y: 20}
+    - name: Owl_13
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 300
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_14
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 290
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20.5}
+        - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -12.5}
+        - {x: -17.5, y: -20.5}
+        - {x: 6.5, y: -20.5}
+        - {x: 19.5, y: -0.5}
+        - {x: 19.5, y: 12.5}
+    - name: Owl_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 295
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 20}
+        - {x: -19.5, y: 9}
+        - {x: -19.5, y: -17}
+        - {x: -18.5, y: -17}
+        - {x: -8.5, y: -20}
+        - {x: 14.5, y: -20}
+        - {x: 19.5, y: -17}
+        - {x: 19.5, y: 3}
+        - {x: 13.5, y: 20}
+    - name: Owl_16
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 300
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_17
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 290
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20.5}
+        - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -12.5}
+        - {x: -17.5, y: -20.5}
+        - {x: 6.5, y: -20.5}
+        - {x: 19.5, y: -0.5}
+        - {x: 19.5, y: 12.5}
+    - name: Owl_18
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 295
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 20}
+        - {x: -19.5, y: 9}
+        - {x: -19.5, y: -17}
+        - {x: -18.5, y: -17}
+        - {x: -8.5, y: -20}
+        - {x: 14.5, y: -20}
+        - {x: 19.5, y: -17}
+        - {x: 19.5, y: 3}
+        - {x: 13.5, y: 20}
+    - name: Owl_19
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 300
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_20
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 290
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20.5}
+        - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -12.5}
+        - {x: -17.5, y: -20.5}
+        - {x: 6.5, y: -20.5}
+        - {x: 19.5, y: -0.5}
+        - {x: 19.5, y: 12.5}
+    - name: Owl_21
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 295
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 20}
+        - {x: -19.5, y: 9}
+        - {x: -19.5, y: -17}
+        - {x: -18.5, y: -17}
+        - {x: -8.5, y: -20}
+        - {x: 14.5, y: -20}
+        - {x: 19.5, y: -17}
+        - {x: 19.5, y: 3}
+        - {x: 13.5, y: 20}
+    - name: Owl_22
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 300
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_23
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 290
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20.5}
+        - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -12.5}
+        - {x: -17.5, y: -20.5}
+        - {x: 6.5, y: -20.5}
+        - {x: 19.5, y: -0.5}
+        - {x: 19.5, y: 12.5}
+    - name: Owl_24
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 247
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -14}
+        - {x: -12.5, y: -20}
+        - {x: 19.5, y: -20}
+        - {x: 19.5, y: 9}
+        - {x: 15.5, y: 20}
+        - {x: -11.5, y: 20}
+        - {x: -19.5, y: -4}
+    - name: Owl_25
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 252
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_26
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 242
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -3.5}
+        - {x: -14.5, y: -15.5}
+        - {x: -4.5, y: -20.5}
+        - {x: 13.5, y: -20.5}
+        - {x: 19.5, y: -8.5}
+        - {x: 19.5, y: 20.5}
+    - name: Owl_27
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 247
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -14}
+        - {x: -12.5, y: -20}
+        - {x: 19.5, y: -20}
+        - {x: 19.5, y: 9}
+        - {x: 15.5, y: 20}
+        - {x: -11.5, y: 20}
+        - {x: -19.5, y: -4}
+    - name: Owl_28
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 252
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_29
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 242
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -3.5}
+        - {x: -14.5, y: -15.5}
+        - {x: -4.5, y: -20.5}
+        - {x: 13.5, y: -20.5}
+        - {x: 19.5, y: -8.5}
+        - {x: 19.5, y: 20.5}
+    - name: Owl_30
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 247
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -14}
+        - {x: -12.5, y: -20}
+        - {x: 19.5, y: -20}
+        - {x: 19.5, y: 9}
+        - {x: 15.5, y: 20}
+        - {x: -11.5, y: 20}
+        - {x: -19.5, y: -4}
+    - name: Owl_31
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 252
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_32
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 242
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -3.5}
+        - {x: -14.5, y: -15.5}
+        - {x: -4.5, y: -20.5}
+        - {x: 13.5, y: -20.5}
+        - {x: 19.5, y: -8.5}
+        - {x: 19.5, y: 20.5}
+    - name: Owl_33
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 247
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -14}
+        - {x: -12.5, y: -20}
+        - {x: 19.5, y: -20}
+        - {x: 19.5, y: 9}
+        - {x: 15.5, y: 20}
+        - {x: -11.5, y: 20}
+        - {x: -19.5, y: -4}
+    - name: Owl_34
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 252
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_35
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 242
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -3.5}
+        - {x: -14.5, y: -15.5}
+        - {x: -4.5, y: -20.5}
+        - {x: 13.5, y: -20.5}
+        - {x: 19.5, y: -8.5}
+        - {x: 19.5, y: 20.5}
+    - name: Owl_36
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 192
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 24}
+        - {x: -18.5, y: -15}
+        - {x: -15.5, y: -24}
+        - {x: 17.5, y: -24}
+        - {x: 18.5, y: -19}
+        - {x: 18.5, y: 24}
+    - name: Owl_37
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 197
+        width: 77
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 17.5}
+        - {x: -33.5, y: 17.5}
+        - {x: -38.5, y: 15.5}
+        - {x: -38.5, y: -8.5}
+        - {x: -18.5, y: -17.5}
+        - {x: 21.5, y: -17.5}
+        - {x: 38.5, y: -2.5}
+        - {x: 38.5, y: 8.5}
+    - name: Owl_38
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 192
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_39
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 192
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 24}
+        - {x: -18.5, y: -15}
+        - {x: -15.5, y: -24}
+        - {x: 17.5, y: -24}
+        - {x: 18.5, y: -19}
+        - {x: 18.5, y: 24}
+    - name: Owl_40
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 197
+        width: 77
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 17.5}
+        - {x: -33.5, y: 17.5}
+        - {x: -38.5, y: 15.5}
+        - {x: -38.5, y: -8.5}
+        - {x: -18.5, y: -17.5}
+        - {x: 21.5, y: -17.5}
+        - {x: 38.5, y: -2.5}
+        - {x: 38.5, y: 8.5}
+    - name: Owl_41
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 192
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_42
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 192
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 24}
+        - {x: -18.5, y: -15}
+        - {x: -15.5, y: -24}
+        - {x: 17.5, y: -24}
+        - {x: 18.5, y: -19}
+        - {x: 18.5, y: 24}
+    - name: Owl_43
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 197
+        width: 77
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 17.5}
+        - {x: -33.5, y: 17.5}
+        - {x: -38.5, y: 15.5}
+        - {x: -38.5, y: -8.5}
+        - {x: -18.5, y: -17.5}
+        - {x: 21.5, y: -17.5}
+        - {x: 38.5, y: -2.5}
+        - {x: 38.5, y: 8.5}
+    - name: Owl_44
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 192
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_45
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 192
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 24}
+        - {x: -18.5, y: -15}
+        - {x: -15.5, y: -24}
+        - {x: 17.5, y: -24}
+        - {x: 18.5, y: -19}
+        - {x: 18.5, y: 24}
+    - name: Owl_46
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 197
+        width: 77
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 17.5}
+        - {x: -33.5, y: 17.5}
+        - {x: -38.5, y: 15.5}
+        - {x: -38.5, y: -8.5}
+        - {x: -18.5, y: -17.5}
+        - {x: 21.5, y: -17.5}
+        - {x: 38.5, y: -2.5}
+        - {x: 38.5, y: 8.5}
+    - name: Owl_47
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 192
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_48
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 151
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -17.5, y: -10.5}
+        - {x: -7.5, y: -20.5}
+        - {x: 10.5, y: -20.5}
+        - {x: 17.5, y: -16.5}
+        - {x: 17.5, y: 20.5}
+    - name: Owl_49
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 159
+        width: 77
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_50
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 144
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_51
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 151
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -17.5, y: -10.5}
+        - {x: -7.5, y: -20.5}
+        - {x: 10.5, y: -20.5}
+        - {x: 17.5, y: -16.5}
+        - {x: 17.5, y: 20.5}
+    - name: Owl_52
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 159
+        width: 77
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_53
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 144
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_54
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 151
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -17.5, y: -10.5}
+        - {x: -7.5, y: -20.5}
+        - {x: 10.5, y: -20.5}
+        - {x: 17.5, y: -16.5}
+        - {x: 17.5, y: 20.5}
+    - name: Owl_55
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 159
+        width: 77
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_56
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 144
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_57
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 151
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 20.5}
+        - {x: -17.5, y: -10.5}
+        - {x: -7.5, y: -20.5}
+        - {x: 10.5, y: -20.5}
+        - {x: 17.5, y: -16.5}
+        - {x: 17.5, y: 20.5}
+    - name: Owl_58
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 159
+        width: 77
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_59
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 144
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_60
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 104
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 19.5}
+        - {x: -19, y: 8.5}
+        - {x: -19, y: -17.5}
+        - {x: -17, y: -19.5}
+        - {x: 16, y: -19.5}
+        - {x: 19, y: -18.5}
+        - {x: 19, y: 0.5}
+        - {x: 9, y: 19.5}
+    - name: Owl_61
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 108
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_62
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 98
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 20.5}
+        - {x: -19, y: 20.5}
+        - {x: -19, y: -20.5}
+        - {x: 10, y: -20.5}
+        - {x: 19, y: -1.5}
+        - {x: 19, y: 12.5}
+    - name: Owl_63
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 104
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 19.5}
+        - {x: -19, y: 8.5}
+        - {x: -19, y: -17.5}
+        - {x: -17, y: -19.5}
+        - {x: 16, y: -19.5}
+        - {x: 19, y: -18.5}
+        - {x: 19, y: 0.5}
+        - {x: 9, y: 19.5}
+    - name: Owl_64
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 108
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_65
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 98
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 20.5}
+        - {x: -19, y: 20.5}
+        - {x: -19, y: -20.5}
+        - {x: 10, y: -20.5}
+        - {x: 19, y: -1.5}
+        - {x: 19, y: 12.5}
+    - name: Owl_66
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 103
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 20}
+        - {x: -19.5, y: 9}
+        - {x: -19.5, y: -17}
+        - {x: -18.5, y: -17}
+        - {x: -8.5, y: -20}
+        - {x: 14.5, y: -20}
+        - {x: 19.5, y: -17}
+        - {x: 19.5, y: 3}
+        - {x: 13.5, y: 20}
+    - name: Owl_67
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 108
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_68
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 98
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20.5}
+        - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -12.5}
+        - {x: -17.5, y: -20.5}
+        - {x: 6.5, y: -20.5}
+        - {x: 19.5, y: -0.5}
+        - {x: 19.5, y: 12.5}
+    - name: Owl_69
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 103
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 20}
+        - {x: -19.5, y: 9}
+        - {x: -19.5, y: -17}
+        - {x: -18.5, y: -17}
+        - {x: -8.5, y: -20}
+        - {x: 14.5, y: -20}
+        - {x: 19.5, y: -17}
+        - {x: 19.5, y: 3}
+        - {x: 13.5, y: 20}
+    - name: Owl_70
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 108
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_71
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 98
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20.5}
+        - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -12.5}
+        - {x: -17.5, y: -20.5}
+        - {x: 6.5, y: -20.5}
+        - {x: 19.5, y: -0.5}
+        - {x: 19.5, y: 12.5}
+    - name: Owl_72
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 56
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 19.5}
+        - {x: -19, y: -4.5}
+        - {x: -19, y: -15.5}
+        - {x: -14, y: -19.5}
+        - {x: 19, y: -19.5}
+        - {x: 19, y: 3.5}
+        - {x: 9, y: 19.5}
+    - name: Owl_73
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 60
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_74
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 50
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 20.5}
+        - {x: -19, y: 16.5}
+        - {x: -19, y: 1.5}
+        - {x: -9, y: -11.5}
+        - {x: -1, y: -20.5}
+        - {x: 18, y: -20.5}
+        - {x: 19, y: -17.5}
+        - {x: 19, y: 20.5}
+    - name: Owl_75
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 56
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 19.5}
+        - {x: -19, y: -4.5}
+        - {x: -19, y: -15.5}
+        - {x: -14, y: -19.5}
+        - {x: 19, y: -19.5}
+        - {x: 19, y: 3.5}
+        - {x: 9, y: 19.5}
+    - name: Owl_76
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 60
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_77
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 50
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 20.5}
+        - {x: -19, y: 16.5}
+        - {x: -19, y: 1.5}
+        - {x: -9, y: -11.5}
+        - {x: -1, y: -20.5}
+        - {x: 18, y: -20.5}
+        - {x: 19, y: -17.5}
+        - {x: 19, y: 20.5}
+    - name: Owl_78
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 55
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -14}
+        - {x: -12.5, y: -20}
+        - {x: 19.5, y: -20}
+        - {x: 19.5, y: 9}
+        - {x: 15.5, y: 20}
+        - {x: -11.5, y: 20}
+        - {x: -19.5, y: -4}
+    - name: Owl_79
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 60
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_80
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 50
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -3.5}
+        - {x: -14.5, y: -15.5}
+        - {x: -4.5, y: -20.5}
+        - {x: 13.5, y: -20.5}
+        - {x: 19.5, y: -8.5}
+        - {x: 19.5, y: 20.5}
+    - name: Owl_81
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 55
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -14}
+        - {x: -12.5, y: -20}
+        - {x: 19.5, y: -20}
+        - {x: 19.5, y: 9}
+        - {x: 15.5, y: 20}
+        - {x: -11.5, y: 20}
+        - {x: -19.5, y: -4}
+    - name: Owl_82
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 60
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_83
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 50
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 20.5}
+        - {x: -19.5, y: -3.5}
+        - {x: -14.5, y: -15.5}
+        - {x: -4.5, y: -20.5}
+        - {x: 13.5, y: -20.5}
+        - {x: 19.5, y: -8.5}
+        - {x: 19.5, y: 20.5}
+    - name: Owl_84
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 24}
+        - {x: -18.5, y: -10}
+        - {x: -10.5, y: -24}
+        - {x: 12.5, y: -24}
+        - {x: 18.5, y: -4}
+        - {x: 18.5, y: 24}
+    - name: Owl_85
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 5
+        width: 77
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.5, y: 17.5}
+        - {x: -35.5, y: 17.5}
+        - {x: -38.5, y: 13.5}
+        - {x: -38.5, y: -9.5}
+        - {x: -19.5, y: -17.5}
+        - {x: 20.5, y: -17.5}
+        - {x: 30.5, y: -9.5}
+        - {x: 38.5, y: -1.5}
+        - {x: 38.5, y: 14.5}
+    - name: Owl_86
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 0
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_87
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 0
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 24}
+        - {x: -18.5, y: -10}
+        - {x: -10.5, y: -24}
+        - {x: 12.5, y: -24}
+        - {x: 18.5, y: -4}
+        - {x: 18.5, y: 24}
+    - name: Owl_88
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 5
+        width: 77
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.5, y: 17.5}
+        - {x: -35.5, y: 17.5}
+        - {x: -38.5, y: 13.5}
+        - {x: -38.5, y: -9.5}
+        - {x: -19.5, y: -17.5}
+        - {x: 20.5, y: -17.5}
+        - {x: 30.5, y: -9.5}
+        - {x: 38.5, y: -1.5}
+        - {x: 38.5, y: 14.5}
+    - name: Owl_89
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_90
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 0
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 24}
+        - {x: -18.5, y: -10}
+        - {x: -10.5, y: -24}
+        - {x: 12.5, y: -24}
+        - {x: 18.5, y: -4}
+        - {x: 18.5, y: 24}
+    - name: Owl_91
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 5
+        width: 77
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.5, y: 17.5}
+        - {x: -35.5, y: 17.5}
+        - {x: -38.5, y: 13.5}
+        - {x: -38.5, y: -9.5}
+        - {x: -19.5, y: -17.5}
+        - {x: 20.5, y: -17.5}
+        - {x: 30.5, y: -9.5}
+        - {x: 38.5, y: -1.5}
+        - {x: 38.5, y: 14.5}
+    - name: Owl_92
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 0
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Owl_93
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 0
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 24}
+        - {x: -18.5, y: -15}
+        - {x: -15.5, y: -24}
+        - {x: 17.5, y: -24}
+        - {x: 18.5, y: -19}
+        - {x: 18.5, y: 24}
+    - name: Owl_94
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 5
+        width: 77
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 17.5}
+        - {x: -33.5, y: 17.5}
+        - {x: -38.5, y: 15.5}
+        - {x: -38.5, y: -8.5}
+        - {x: -18.5, y: -17.5}
+        - {x: 21.5, y: -17.5}
+        - {x: 38.5, y: -2.5}
+        - {x: 38.5, y: 8.5}
+    - name: Owl_95
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

@@ -7,7 +7,7 @@ public class Owl : MonoBehaviour {
 	}
 
 	public GameObject projectile = null;
-	public const float projectileInterval = .5f;
+	public float projectileInterval = 1f;
 
 	public LayerMask foxMask;
 	public SightScript sight;
@@ -29,7 +29,7 @@ public class Owl : MonoBehaviour {
 	void Start () {
 		prevProj = Time.realtimeSinceStartup;
 		flip = false;
-		speed = 4f;
+		speed = 2f;
 		myRB = gameObject.GetComponent<Rigidbody2D> ();
 		sight = gameObject.GetComponent<SightScript> ();
 		curState = State.Patrol;
