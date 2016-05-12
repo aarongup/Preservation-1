@@ -58,6 +58,7 @@
      <Compile Include="Assets\Resources\Scripts\Monkey.cs" />
      <Compile Include="Assets\Resources\Scripts\Owl.cs" />
      <Compile Include="Assets\Resources\Scripts\Player.cs" />
+     <Compile Include="Assets\Resources\Scripts\PowerUpDJ.cs" />
      <Compile Include="Assets\Resources\Scripts\PushBehavior.cs" />
      <Compile Include="Assets\Resources\Scripts\RockBehavior.cs" />
      <Compile Include="Assets\Resources\Scripts\ScannerBehavior.cs" />
