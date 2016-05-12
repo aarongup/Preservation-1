@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class CameraScript : MonoBehaviour {
@@ -29,7 +30,7 @@ public class CameraScript : MonoBehaviour {
 		UnityEngine.UI.Text gui = echoText.GetComponent<UnityEngine.UI.Text> ();
       
 		if (animalCount >= 5) {
-			gui.text = "WIN";
+			SceneManager.LoadScene("WinScreen");
 		} else {
 			gui.text = "Animals Scanned " + animalCount;
 		}

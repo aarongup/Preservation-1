@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
@@ -7,7 +8,10 @@ public class Player : MonoBehaviour {
 	public float speed = 50f;
 	public float jumpPower = 150f;
 	public float maxSpeed = 3f;
-   public Vector3 startPosition;
+	public float livesLeft = 3f;
+	public float timer = 0f;
+    public Vector3 startPosition;
+	public Text lifeCounter;
 
 
 	public bool grounded;
@@ -37,10 +41,13 @@ public class Player : MonoBehaviour {
 		if (currentHealth > maxHealth) {
 			currentHealth = maxHealth;
 		}
+		timer -= Time.deltaTime;
 
 		if (currentHealth <= 0) {
 			Die ();
 		}
+
+		lifeCounter.text = "Attempts Left: " + livesLeft;
 
 		GBS.Value = currentHealth;
 
@@ -112,6 +119,13 @@ public class Player : MonoBehaviour {
 	void Die() {
       transform.position = startPosition;
       currentHealth = maxHealth;
+		if (timer <= 0) {
+			livesLeft -= 1f;
+			timer = 3f;
+		}
+		if (livesLeft <= 0) {
+			SceneManager.LoadScene ("LoseScreen");
+		}
 		//SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}
 
