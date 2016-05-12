@@ -42,7 +42,7 @@ public class Owl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (curState);
+		//Debug.Log (curState);
 		distance--;
 		if (!flip) {
 			gameObject.transform.Translate (Vector3.right * speed * Time.deltaTime);
@@ -82,11 +82,11 @@ public class Owl : MonoBehaviour {
 	}
 
 	void updateFromPatrol() {
-		Debug.Log ("in patrol");
+		//Debug.Log ("in patrol");
 		Vector2 lineCastPos = gameObject.transform.position - gameObject.transform.right * myWidth;
 		Debug.DrawLine (lineCastPos, lineCastPos + Vector2.down * lineScalar * 3);
 		bool playerSpotted = Physics2D.Linecast (lineCastPos, lineCastPos + Vector2.down * lineScalar * 3, foxMask);
-		Debug.Log (playerSpotted);
+		//Debug.Log (playerSpotted);
 		if (playerSpotted) {
 			curState = State.Charge;
 		}

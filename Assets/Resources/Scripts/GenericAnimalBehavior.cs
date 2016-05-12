@@ -3,9 +3,9 @@ using System.Collections;
 
 public class GenericAnimalBehavior : MonoBehaviour {
 
-   float mCurrentScanValue;
-   const float mTargetScanValue = 100;
-   const float mScanRate = 50;//scan points per second
+   public float mCurrentScanValue;
+   public float mTargetScanValue = 100;
+   public float mScanRate = 50;//scan points per second
 
    //scan progresss bar
    Vector2 scanBarPos;

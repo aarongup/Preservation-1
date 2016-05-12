@@ -23,7 +23,6 @@ public class ScannerBehavior : MonoBehaviour {
          Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
          mousePosition.z = 0;
          Vector3 toMouse = mousePosition - transform.position;
-         Debug.Log(toMouse);
          Vector3 impactPoint;
          RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, mousePosition - transform.position, mScannerRange);
          if (hitInfo.collider != null) {

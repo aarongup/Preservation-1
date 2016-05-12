@@ -17,7 +17,7 @@ public class CameraScript : MonoBehaviour {
 		animalCount = 0;
 		smoothTime = .05f;
 		player = GameObject.FindGameObjectWithTag ("Player");
-      Debug.Log(player.name);
+      //Debug.Log(player.name);
 		minCameraPos = new Vector3 (6f, 4.5f, -10f);
 		maxCameraPos = new Vector3 (60f, 9.5f, -10f);
 	}

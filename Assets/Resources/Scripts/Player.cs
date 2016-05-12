@@ -6,7 +6,8 @@ public class Player : MonoBehaviour {
 
 	public float speed = 50f;
 	public float jumpPower = 150f;
-	public float maxSpeed = 3f; 
+	public float maxSpeed = 3f;
+   public Vector3 startPosition;
 
 
 	public bool grounded;
@@ -29,7 +30,6 @@ public class Player : MonoBehaviour {
 		currentHealth = maxHealth;
 		canDoubleJump = false; 
 		airborne = false;
-
 	}
 
 	// Update is called once per frame
@@ -44,8 +44,10 @@ public class Player : MonoBehaviour {
 
 		GBS.Value = currentHealth;
 
-		//anim.setBool("Grounded", grounded);
-		//anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
+      //anim.setBool("Grounded", grounded);
+      //anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
+
+      handleGoingOffScreen();
 
 		//To flip sprite based on direction 
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -99,9 +101,18 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+   void handleGoingOffScreen() {
+      Vector2 viewportPosition = Camera.main.WorldToViewportPoint(gameObject.transform.position);
+      if (viewportPosition.x < 0 || viewportPosition.y < 0 || viewportPosition.x > 1 || viewportPosition.y > 1) {
+         //Debug.Log("Player offscreen");
+         Die();
+      }
+   }
+
 	void Die() {
-		//after dieing it resets to initial screen
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+      transform.position = startPosition;
+      currentHealth = maxHealth;
+		//SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}
 
 	void decreaseHealth(float damage) {
