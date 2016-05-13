@@ -1,14 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\OneWayPlatform.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\SceneTransitioner.cs">
     <Files>
-      <File FileName="Assets\Resources\Scripts\CameraScript.cs" Line="27" Column="1" />
+      <File FileName="Assets\Resources\Scripts\LevelSelector.cs" Line="17" Column="109" />
       <File FileName="Assets\Resources\Scripts\GlobalBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\Monkey.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\Player.cs" Line="116" Column="13" />
-      <File FileName="Assets\Resources\Scripts\ScannerBehavior.cs" Line="9" Column="11" />
-      <File FileName="Assets\Resources\Scripts\OneWayPlatform.cs" Line="25" Column="28" />
-      <File FileName="Assets\Resources\Scripts\Fox.cs" Line="138" Column="64" />
+      <File FileName="Assets\Resources\Scripts\AnimalScripts\SightScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\SceneTransitioner.cs" Line="57" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

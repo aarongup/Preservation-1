@@ -47,7 +47,7 @@ public class SceneTransitioner : MonoBehaviour {
 
 	private void BeginService()
 	{
-		LoadScene("Demo");
+		LoadScene("Hub");
 	}
 
 	private void ControlService() {
