@@ -59,6 +59,7 @@
      <Compile Include="Assets\Resources\Scripts\GlobalManager.cs" />
      <Compile Include="Assets\Resources\Scripts\MenuManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Monkey.cs" />
+     <Compile Include="Assets\Resources\Scripts\OneWayPlatform.cs" />
      <Compile Include="Assets\Resources\Scripts\Owl.cs" />
      <Compile Include="Assets\Resources\Scripts\Player.cs" />
      <Compile Include="Assets\Resources\Scripts\PowerUpDJ.cs" />

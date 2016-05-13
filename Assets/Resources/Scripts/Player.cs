@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 	public float maxSpeed = 3f;
 	public float livesLeft = 3f;
 	public float timer = 0f;
+	public float sizeScalar = .193f;
     public Vector3 startPosition;
 	public Text lifeCounter;
 
@@ -61,10 +62,10 @@ public class Player : MonoBehaviour {
 
 		//To flip sprite based on direction 
 		if (mousePosition.x < transform.position.x) {
-			transform.localScale = new Vector3 (-.193f, .193f, 1);
+			transform.localScale = new Vector3 (-sizeScalar, sizeScalar, 1);
 		}
 		else if (mousePosition.x > transform.position.x) {
-			transform.localScale = new Vector3 (.193f, .193f, 1);
+			transform.localScale = new Vector3 (sizeScalar, sizeScalar, 1);
 		}
 
 		if (Input.GetButtonDown ("Jump") || Input.GetKeyDown("w")) {
@@ -140,7 +141,7 @@ public class Player : MonoBehaviour {
 
 	void OnGUI() {
 		GUI.contentColor = Color.green;
-		GUI.Label (new Rect (0, 0, 100, 200), "Health " + (int)Mathf.Ceil (currentHealth * 200));
+		GUI.Label (new Rect (0, 0, 100, 200), "Health " + (int)Mathf.Ceil (currentHealth * 100));
 	}
 }	
 

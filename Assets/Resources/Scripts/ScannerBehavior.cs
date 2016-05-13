@@ -3,10 +3,10 @@ using System.Collections;
 
 public class ScannerBehavior : MonoBehaviour {
    LineRenderer visableScannerLine;
-   float mScannerRange = 4;
-   float mScanningMultiplier = 1;
-   float startWidth = .1f;
-   float endWidth = .25f;
+   public float mScannerRange = 4;
+   public float mScanningMultiplier = 1;
+   public float startWidth = .1f;
+   public float endWidth = .25f;
 	void Start () {
       visableScannerLine = gameObject.AddComponent<LineRenderer>();
       visableScannerLine.enabled = true;

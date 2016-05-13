@@ -10,17 +10,14 @@ public class CameraScript : MonoBehaviour {
 	private GameObject player;
 	private Vector2 velocity;
 
-	private Vector3 minCameraPos;
-	private Vector3 maxCameraPos;
+	public Vector3 minCameraPos = new Vector3 (6f, 4.5f, -10f);
+	public Vector3 maxCameraPos = new Vector3 (60f, 9.5f, -10f);
 
 	// Use this for initialization
 	void Start () {
 		animalCount = 0;
 		smoothTime = .05f;
 		player = GameObject.FindGameObjectWithTag ("Player");
-      //Debug.Log(player.name);
-		minCameraPos = new Vector3 (6f, 4.5f, -10f);
-		maxCameraPos = new Vector3 (60f, 9.5f, -10f);
 	}
 
 	// Update is called once per frame
