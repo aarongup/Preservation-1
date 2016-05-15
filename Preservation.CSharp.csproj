@@ -58,6 +58,12 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -67,23 +73,29 @@
     <Compile Include="Assets\GradientGUIBars\Script\GUIBarScript.cs" />
     <Compile Include="Assets\GradientGUIBars\Script\MoreButtonScript.cs" />
     <Compile Include="Assets\GradientGUIBars\Script\MoveCameraScript.cs" />
+    <Compile Include="Assets\Resources\Scripts\AlternateBG.cs" />
+    <Compile Include="Assets\Resources\Scripts\AnimalScripts\Bear.cs" />
+    <Compile Include="Assets\Resources\Scripts\AnimalScripts\Fox.cs" />
+    <Compile Include="Assets\Resources\Scripts\AnimalScripts\GenericAnimalBehavior.cs" />
+    <Compile Include="Assets\Resources\Scripts\AnimalScripts\Monkey.cs" />
+    <Compile Include="Assets\Resources\Scripts\AnimalScripts\Owl.cs" />
+    <Compile Include="Assets\Resources\Scripts\AnimalScripts\SightScript.cs" />
     <Compile Include="Assets\Resources\Scripts\BananaBehavior.cs" />
-    <Compile Include="Assets\Resources\Scripts\Bear.cs" />
-    <Compile Include="Assets\Resources\Scripts\CameraScript.cs" />
-    <Compile Include="Assets\Resources\Scripts\Fox.cs" />
-    <Compile Include="Assets\Resources\Scripts\GenericAnimalBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\GlobalBehavior.cs" />
-    <Compile Include="Assets\Resources\Scripts\Monkey.cs" />
-    <Compile Include="Assets\Resources\Scripts\Owl.cs" />
-    <Compile Include="Assets\Resources\Scripts\Player.cs" />
-    <Compile Include="Assets\Resources\Scripts\PowerUpDJ.cs" />
-    <Compile Include="Assets\Resources\Scripts\PushBehavior.cs" />
-    <Compile Include="Assets\Resources\Scripts\RockBehavior.cs" />
-    <Compile Include="Assets\Resources\Scripts\ScannerBehavior.cs" />
-    <Compile Include="Assets\Resources\Scripts\SightScript.cs" />
+    <Compile Include="Assets\Resources\Scripts\GlobalManager.cs" />
+    <Compile Include="Assets\Resources\Scripts\HorizMovingPlatform.cs" />
+    <Compile Include="Assets\Resources\Scripts\LevelSelector.cs" />
+    <Compile Include="Assets\Resources\Scripts\MenuManager.cs" />
+    <Compile Include="Assets\Resources\Scripts\PlayerScripts\Player.cs" />
+    <Compile Include="Assets\Resources\Scripts\PlayerScripts\PowerUpDJ.cs" />
+    <Compile Include="Assets\Resources\Scripts\PlayerScripts\ScannerBehavior.cs" />
+    <Compile Include="Assets\Resources\Scripts\PlayerScripts\groundCheck.cs" />
+    <Compile Include="Assets\Resources\Scripts\SceneTransitioner.cs" />
     <Compile Include="Assets\Resources\Scripts\Toggle.cs" />
-    <Compile Include="Assets\Resources\Scripts\TogglePlatform.cs" />
-    <Compile Include="Assets\Resources\Scripts\groundCheck.cs" />
+    <Compile Include="Assets\Resources\Scripts\WorldScritps\CameraScript.cs" />
+    <Compile Include="Assets\Resources\Scripts\WorldScritps\PushBehavior.cs" />
+    <Compile Include="Assets\Resources\Scripts\WorldScritps\RockBehavior.cs" />
+    <Compile Include="Assets\Resources\Scripts\WorldScritps\TogglePlatform.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GradientGUIBars\ReadMe\AboutFonts.txt" />

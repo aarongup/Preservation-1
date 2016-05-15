@@ -11,7 +11,7 @@ public class Player : MonoBehaviour {
 	public float livesLeft = 3f;
 	public float timer = 0f;
 	public float sizeScalar = .193f;
-    public Vector3 startPosition;
+   public Vector3 startPosition;
 	public Text lifeCounter;
 
 
