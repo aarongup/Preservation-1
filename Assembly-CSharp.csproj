@@ -68,6 +68,7 @@
      <Compile Include="Assets\Resources\Scripts\PlayerScripts\groundCheck.cs" />
      <Compile Include="Assets\Resources\Scripts\SceneTransitioner.cs" />
      <Compile Include="Assets\Resources\Scripts\Toggle.cs" />
+     <Compile Include="Assets\Resources\Scripts\VertMovingPlatform.cs" />
      <Compile Include="Assets\Resources\Scripts\WorldScritps\CameraScript.cs" />
      <Compile Include="Assets\Resources\Scripts\WorldScritps\PushBehavior.cs" />
      <Compile Include="Assets\Resources\Scripts\WorldScritps\RockBehavior.cs" />
