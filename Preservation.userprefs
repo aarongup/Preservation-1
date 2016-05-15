@@ -2,10 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\SceneTransitioner.cs">
     <Files>
-      <File FileName="Assets\Resources\Scripts\LevelSelector.cs" Line="17" Column="109" />
+      <File FileName="Assets\Resources\Scripts\HorizMovingPlatform.cs" Line="27" Column="67" />
+      <File FileName="Assets\Resources\Scripts\LevelSelector.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\GlobalBehavior.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\AnimalScripts\SightScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\SceneTransitioner.cs" Line="57" Column="2" />
+      <File FileName="Assets\Resources\Scripts\PlayerScripts\Player.cs" Line="148" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

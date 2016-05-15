@@ -59,6 +59,7 @@
      <Compile Include="Assets\Resources\Scripts\BananaBehavior.cs" />
      <Compile Include="Assets\Resources\Scripts\GlobalBehavior.cs" />
      <Compile Include="Assets\Resources\Scripts\GlobalManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\HorizMovingPlatform.cs" />
      <Compile Include="Assets\Resources\Scripts\LevelSelector.cs" />
      <Compile Include="Assets\Resources\Scripts\MenuManager.cs" />
      <Compile Include="Assets\Resources\Scripts\PlayerScripts\Player.cs" />

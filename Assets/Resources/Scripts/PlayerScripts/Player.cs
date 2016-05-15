@@ -143,5 +143,17 @@ public class Player : MonoBehaviour {
 		GUI.contentColor = Color.green;
 		GUI.Label (new Rect (0, 0, 100, 200), "Health " + (int)Mathf.Ceil (currentHealth * 100));
 	}
+
+	void OnCollisionStay2D(Collision2D other) {
+		if (other.gameObject.tag == "Platform") {
+			transform.parent = other.transform;
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D other) {
+		if (other.gameObject.tag == "Platform") {
+			transform.parent = null;
+		}
+	}
 }	
 
