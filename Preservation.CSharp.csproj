@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -92,6 +86,7 @@
     <Compile Include="Assets\Resources\Scripts\PlayerScripts\groundCheck.cs" />
     <Compile Include="Assets\Resources\Scripts\SceneTransitioner.cs" />
     <Compile Include="Assets\Resources\Scripts\Toggle.cs" />
+    <Compile Include="Assets\Resources\Scripts\VertMovingPlatform.cs" />
     <Compile Include="Assets\Resources\Scripts\WorldScritps\CameraScript.cs" />
     <Compile Include="Assets\Resources\Scripts\WorldScritps\PushBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\WorldScritps\RockBehavior.cs" />

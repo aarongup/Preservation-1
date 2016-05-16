@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -31,7 +32,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
-		anim = gameObject.GetComponent<Animator> ();
+		anim = gameObject.GetComponent<Animator>();
 		currentHealth = maxHealth;
 		canDoubleJump = false; 
 		airborne = false;
@@ -81,7 +82,23 @@ public class Player : MonoBehaviour {
 				}
 			}
 		}
-	}
+
+      //change animation state based on velocity
+      if ( Math.Abs(rb2d.velocity.x) > 0) {
+         anim.SetBool("Running", true);
+      }
+      else {
+         anim.SetBool("Running", false);
+      }
+
+      //change animation state based on firing
+      if (Input.GetButton("Fire1")) {
+         anim.SetBool("Firing", true);
+      }
+      else {
+         anim.SetBool("Firing", false);
+      }
+   }
 
 	void FixedUpdate() {
 		Vector3 easeVelocity = rb2d.velocity; 	//setting up for fake friction
@@ -91,9 +108,16 @@ public class Player : MonoBehaviour {
 
 
 		float h = Input.GetAxis ("Horizontal");
+      //change animation state based on velocity
+      if (Math.Abs(h) > 0) {
+         anim.SetBool("Running", true);
+      }
+      else {
+         anim.SetBool("Running", false);
+      }
 
-		//fake friction to slow down speed of player
-		if (grounded) {
+      //fake friction to slow down speed of player
+      if (grounded) {
 			rb2d.velocity = easeVelocity;
 		}
 

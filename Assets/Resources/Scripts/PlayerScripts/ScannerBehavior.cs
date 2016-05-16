@@ -26,7 +26,7 @@ public class ScannerBehavior : MonoBehaviour {
          Vector3 impactPoint;
          RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, mousePosition - transform.position, mScannerRange);
          if (hitInfo.collider != null) {
-            Debug.Log(hitInfo.collider.gameObject.name);
+            //Debug.Log(hitInfo.collider.gameObject.name);
             impactPoint = hitInfo.point;
             hitInfo.collider.gameObject.SendMessage("scanned", mScanningMultiplier, SendMessageOptions.DontRequireReceiver);
          }
