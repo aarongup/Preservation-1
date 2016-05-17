@@ -60,6 +60,8 @@ public class Player : MonoBehaviour {
 
 		//To flip sprite based on direction 
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		/*Ray myMouse = Camera.main.ScreenPointToRay (Input.mousePosition);
+		Debug.DrawRay(myMouse.origin, myMouse.direction * 10, Color.yellow);*/
 
 		//To flip sprite based on direction 
 		if (mousePosition.x < transform.position.x) {

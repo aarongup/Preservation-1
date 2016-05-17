@@ -12,13 +12,11 @@ public class Bear : MonoBehaviour {
 	private State curState;
 	private Rigidbody2D myRB;
 	private float myWidth;
-	private Vector3 returnPoint;
 	public GameObject player;
 	public bool jumped;
 	public bool isBurrowed;
 	public Sprite foxSprite;
 	public Sprite burrowedSprite;
-	private SpriteRenderer myRenderer;
 	public float lineScalar = 1.5f;
 
 	public float speed;
@@ -26,14 +24,12 @@ public class Bear : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		speed = 3f;
 		myRB = gameObject.GetComponent<Rigidbody2D> ();
 		sight = gameObject.GetComponent<SightScript> ();
 		curState = State.Patrol;
 		myWidth = this.GetComponent<SpriteRenderer> ().bounds.extents.x;
 		player = GameObject.FindWithTag("Player");
 		jumped = false;
-		myRenderer = gameObject.GetComponent<SpriteRenderer> ();
 	}
 
 	// Update is called once per frame
@@ -67,7 +63,6 @@ public class Bear : MonoBehaviour {
 
 		if (sight.playerSpotted) {
 			curState = State.Charge;
-			returnPoint = gameObject.transform.position;
 		}
 	}
 
@@ -104,7 +99,10 @@ public class Bear : MonoBehaviour {
 	{		
 		if (other.gameObject.name == "Player") {
 			GameObject p =  GameObject.Find ("Player");
-			p.SendMessage ("decreaseHealth", .2f);
+			p.SendMessage ("decreaseHealth", .1f);
+			Vector3 currRot = gameObject.transform.eulerAngles;
+			currRot.y += 180;
+			gameObject.transform.eulerAngles = currRot;
 		}
 				
 

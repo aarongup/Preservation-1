@@ -12,7 +12,6 @@ public class Owl : MonoBehaviour {
 	public LayerMask foxMask;
 	public SightScript sight;
 	private State curState;
-	private Rigidbody2D myRB;
 	private float myWidth;
 	private Vector3 returnPoint;
 	public GameObject player;
@@ -30,7 +29,6 @@ public class Owl : MonoBehaviour {
 		prevProj = Time.realtimeSinceStartup;
 		flip = false;
 		speed = 2f;
-		myRB = gameObject.GetComponent<Rigidbody2D> ();
 		sight = gameObject.GetComponent<SightScript> ();
 		curState = State.Patrol;
 		myWidth = this.GetComponent<SpriteRenderer> ().bounds.extents.x;

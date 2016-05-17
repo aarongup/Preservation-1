@@ -42,7 +42,6 @@ public class GlobalBehavior : MonoBehaviour {
 
 		for (int i = 0; i < totalEnemies; i++) {
 			enemyToSpawn = Resources.Load ("Prefabs/Enemy") as GameObject;
-			GameObject e = (GameObject)Instantiate (enemyToSpawn);
 		}
 
 		enemyCount = 50;
@@ -140,7 +139,6 @@ public class GlobalBehavior : MonoBehaviour {
 	private void spawnAnEnemy() {
 		if ((Time.realtimeSinceStartup - mPreEnemySpawnTime) > kEnemySpawnInterval) {
 			increaseEnemyCount ();
-			GameObject e = (GameObject)Instantiate (enemyToSpawn);
 			mPreEnemySpawnTime = Time.realtimeSinceStartup;
 		}
 	}
