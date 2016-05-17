@@ -21,6 +21,7 @@ public class Fox : MonoBehaviour {
 	public Sprite burrowedSprite;
 	private SpriteRenderer myRenderer;
 	public float lineScalar = 1.5f;
+	private float timer = 0f;
 
 	public float speed;
 
@@ -109,6 +110,7 @@ public class Fox : MonoBehaviour {
 		Vector2 lineCastPos = gameObject.transform.position - gameObject.transform.right * myWidth;
 		Debug.DrawLine (lineCastPos, lineCastPos + Vector2.down * lineScalar);
 		bool isGrounded = Physics2D.Linecast (lineCastPos, lineCastPos + Vector2.down * lineScalar, foxMask);
+		timer -= Time.deltaTime;
 
 		if (!isGrounded) {
 			Vector3 currRot = gameObject.transform.eulerAngles;
@@ -120,19 +122,22 @@ public class Fox : MonoBehaviour {
 		myVel.x = -gameObject.transform.right.x * speed;
 		myRB.velocity = myVel;
 
-		if (Vector3.Distance(gameObject.transform.position, returnPoint) < 1) {
+		if (timer <= 0) {
 			curState = State.Patrol;
 			isBurrowed = false;
 			myRenderer.sprite = foxSprite;
-			gameObject.transform.localScale = new Vector3 (1f, 1f, 1f);
+			gameObject.transform.localScale = new Vector3 (2.5f, 2.5f, 2.5f);
 		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{		
-		if (other.gameObject.name == "Player") {
+		if (other.gameObject.name == "Player" && !isBurrowed) {
 			GameObject p =  GameObject.Find ("Player");
-			p.SendMessage ("decreaseHealth", .15f);
+			p.SendMessage ("decreaseHealth", .05f);
+			Vector3 currRot = gameObject.transform.eulerAngles;
+			currRot.y += 180;
+			gameObject.transform.eulerAngles = currRot;
 		}
 
 		if (other.gameObject.layer == LayerMask.NameToLayer("Ground") && jumped == true) {
@@ -140,6 +145,7 @@ public class Fox : MonoBehaviour {
 			curState = State.Burrowed;
 			isBurrowed = true;
 			myRenderer.sprite = burrowedSprite;
+			timer = 10f;
 			gameObject.transform.localScale = new Vector3 (1f, .5f, 1f);
 		}
 

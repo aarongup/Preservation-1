@@ -5,7 +5,7 @@ public class HorizMovingPlatform : MonoBehaviour {
 
 	public float maxDistance = 3;
 	public Vector3 startPosition;
-	private bool direction; //True = right, false = left
+	public bool direction; //True = right, false = left
 
 	// Use this for initialization
 	void Start () {

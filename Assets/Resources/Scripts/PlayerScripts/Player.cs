@@ -59,7 +59,8 @@ public class Player : MonoBehaviour {
       handleGoingOffScreen();
 
 		//To flip sprite based on direction 
-		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		Vector3 mousePosition = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, (transform.position.z - Camera.main.transform.position.z)));
+
 		/*Ray myMouse = Camera.main.ScreenPointToRay (Input.mousePosition);
 		Debug.DrawRay(myMouse.origin, myMouse.direction * 10, Color.yellow);*/
 
@@ -171,13 +172,13 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnCollisionStay2D(Collision2D other) {
-		if (other.gameObject.tag == "Platform") {
+		if (other.gameObject.tag == "Platform" || other.gameObject.tag == "Set1" || other.gameObject.tag == "Set2") {
 			transform.parent = other.transform;
 		}
 	}
 
 	void OnCollisionExit2D(Collision2D other) {
-		if (other.gameObject.tag == "Platform") {
+		if (other.gameObject.tag == "Platform" || other.gameObject.tag == "Set1" || other.gameObject.tag == "Set2") {
 			transform.parent = null;
 		}
 	}
