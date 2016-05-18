@@ -107,15 +107,6 @@ public class Player : MonoBehaviour {
 		}
 
 
-
-      //change animation state based on velocity
-      if ( Math.Abs(rb2d.velocity.x) > 0) {
-         anim.SetBool("Running", true);
-      }
-      else {
-         anim.SetBool("Running", false);
-      }
-
       //change animation state based on firing
       if (Input.GetButton("Fire1")) {
          anim.SetBool("Firing", true);
