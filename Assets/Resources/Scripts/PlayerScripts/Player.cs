@@ -20,6 +20,8 @@ public class Player : MonoBehaviour {
 	public bool canDoubleJump;
 	public bool airborne;
 
+	public bool onTree = false;
+
 
 	public float currentHealth;
 	public float maxHealth = 2f; //1 repersents full, 90% health = .9
@@ -29,6 +31,15 @@ public class Player : MonoBehaviour {
 	public GUIBarScript GBS;
 
 
+	//ALL OF THE BELOW ARE FOR CLIMBING ONLY
+	public LayerMask treeLayer;
+	public Transform treeCheck;
+	public float treeCheckRadius = 2f;
+	public float originalGravity;
+	public float upSpeed = 0;
+
+	public bool canClimb;
+
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
@@ -36,6 +47,8 @@ public class Player : MonoBehaviour {
 		currentHealth = maxHealth;
 		canDoubleJump = false; 
 		airborne = false;
+		originalGravity = rb2d.gravityScale;
+		canClimb = false;
 	}
 
 	// Update is called once per frame
@@ -52,6 +65,13 @@ public class Player : MonoBehaviour {
 		lifeCounter.text = "Attempts Left: " + livesLeft;
 
 		GBS.Value = currentHealth;
+
+		if (Input.GetKeyDown (KeyCode.LeftShift) || Input.GetKeyDown (KeyCode.RightShift)) {
+			rb2d.gravityScale = 1f;
+			if (canClimb) {
+				canClimb = !canClimb;
+			}
+		}
 
       //anim.setBool("Grounded", grounded);
       //anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
@@ -85,6 +105,8 @@ public class Player : MonoBehaviour {
 				}
 			}
 		}
+
+
 
       //change animation state based on velocity
       if ( Math.Abs(rb2d.velocity.x) > 0) {
@@ -124,8 +146,14 @@ public class Player : MonoBehaviour {
 			rb2d.velocity = easeVelocity;
 		}
 
+		if (canClimb) {
+			rb2d.AddForce (Vector2.up * 500f * Input.GetAxis ("Vertical"));
+			rb2d.AddForce (Vector2.right * 500f * Input.GetAxis ("Horizontal"));
+		}
+
 		//moving the player
 		rb2d.AddForce (Vector2.right * speed * h);
+
 
 		if (rb2d.velocity.x > maxSpeed) {
 			rb2d.velocity = new Vector2 (maxSpeed, rb2d.velocity.y);
@@ -180,7 +208,23 @@ public class Player : MonoBehaviour {
 	void OnCollisionExit2D(Collision2D other) {
 		if (other.gameObject.tag == "Platform" || other.gameObject.tag == "Set1" || other.gameObject.tag == "Set2") {
 			transform.parent = null;
+		}			
+	}
+
+	void OnTriggerStay2D(Collider2D other) {
+		if (other.gameObject.layer == LayerMask.NameToLayer ("Climbable")) {
+			canClimb = true;
+			rb2d.velocity = new Vector2 (0f, 0f);
+			rb2d.gravityScale = .5f;
 		}
 	}
+
+	void OnTriggerExit2D(Collider2D other) {
+		if (other.gameObject.layer == LayerMask.NameToLayer ("Climbable")) {
+			canClimb = false;
+			rb2d.gravityScale = 1f;
+		}
+	}
+
 }	
 
