@@ -53,6 +53,7 @@ public class Player : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		//grounded = true; //for debugging, infinite jump : )
 		if (currentHealth > maxHealth) {
 			currentHealth = maxHealth;
 		}
