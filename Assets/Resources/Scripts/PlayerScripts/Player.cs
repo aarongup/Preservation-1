@@ -12,7 +12,7 @@ public class Player : MonoBehaviour {
 	public float livesLeft = 3f;
 	public float timer = 0f;
 	public float sizeScalar = .193f;
-   public Vector3 startPosition;
+	public Vector3 startPosition;
 	public Text lifeCounter;
 
 
@@ -73,10 +73,10 @@ public class Player : MonoBehaviour {
 			}
 		}
 
-      //anim.setBool("Grounded", grounded);
-      //anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
+		//anim.setBool("Grounded", grounded);
+		//anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
 
-      handleGoingOffScreen();
+		handleGoingOffScreen();
 
 		//To flip sprite based on direction 
 		Vector3 mousePosition = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, (transform.position.z - Camera.main.transform.position.z)));
@@ -108,22 +108,22 @@ public class Player : MonoBehaviour {
 
 
 
-      //change animation state based on velocity
-      if ( Math.Abs(rb2d.velocity.x) > 0) {
-         anim.SetBool("Running", true);
-      }
-      else {
-         anim.SetBool("Running", false);
-      }
+		//change animation state based on velocity
+		if ( Math.Abs(rb2d.velocity.x) > 0) {
+			anim.SetBool("Running", true);
+		}
+		else {
+			anim.SetBool("Running", false);
+		}
 
-      //change animation state based on firing
-      if (Input.GetButton("Fire1")) {
-         anim.SetBool("Firing", true);
-      }
-      else {
-         anim.SetBool("Firing", false);
-      }
-   }
+		//change animation state based on firing
+		if (Input.GetButton("Fire1")) {
+			anim.SetBool("Firing", true);
+		}
+		else {
+			anim.SetBool("Firing", false);
+		}
+	}
 
 	void FixedUpdate() {
 		Vector3 easeVelocity = rb2d.velocity; 	//setting up for fake friction
@@ -133,16 +133,16 @@ public class Player : MonoBehaviour {
 
 
 		float h = Input.GetAxis ("Horizontal");
-      //change animation state based on velocity
-      if (Math.Abs(h) > 0) {
-         anim.SetBool("Running", true);
-      }
-      else {
-         anim.SetBool("Running", false);
-      }
+		//change animation state based on velocity
+		if (Math.Abs(h) > 0) {
+			anim.SetBool("Running", true);
+		}
+		else {
+			anim.SetBool("Running", false);
+		}
 
-      //fake friction to slow down speed of player
-      if (grounded) {
+		//fake friction to slow down speed of player
+		if (grounded) {
 			rb2d.velocity = easeVelocity;
 		}
 
@@ -164,17 +164,17 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-   void handleGoingOffScreen() {
-      Vector2 viewportPosition = Camera.main.WorldToViewportPoint(gameObject.transform.position);
-      if (viewportPosition.x < 0 || viewportPosition.y < 0 || viewportPosition.x > 1 || viewportPosition.y > 1) {
-         //Debug.Log("Player offscreen");
-         Die();
-      }
-   }
+	void handleGoingOffScreen() {
+		Vector2 viewportPosition = Camera.main.WorldToViewportPoint(gameObject.transform.position);
+		if (viewportPosition.x < 0 || viewportPosition.y < 0 || viewportPosition.x > 1 || viewportPosition.y > 1) {
+			//Debug.Log("Player offscreen");
+			Die();
+		}
+	}
 
 	void Die() {
-      transform.position = startPosition;
-      currentHealth = maxHealth;
+		transform.position = startPosition;
+		currentHealth = maxHealth;
 		if (timer <= 0) {
 			livesLeft -= 1f;
 			timer = 3f;
