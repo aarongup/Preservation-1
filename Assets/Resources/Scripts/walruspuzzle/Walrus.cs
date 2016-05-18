@@ -14,11 +14,14 @@ public class Walrus : MonoBehaviour {
 
 	private int currentPosition;
 	private float speed = 2.0f;
-	private float timeLimit = 5.0f;
+	private float timeLimit = 1.0f;
 
-	private float lowerY = -6f;
-	private float upperY = -4.4f;
+	private float lowerY = -50.7f;	//position where snowman is no longer seen
+	private float upperY = -51.82f;
 	private float deltaY = .02f;
+
+	private float threeSeconds = 86f;
+
 
 	private bool down;
 	private float spawnTime;
@@ -44,10 +47,67 @@ public class Walrus : MonoBehaviour {
 
 
 	}
-	
+
+	void stuff() {
+		float leftDist = (player.transform.position - leftPos).magnitude;
+		float middleDist = (player.transform.position - middlePos).magnitude;
+		float rightDist = (player.transform.position - rightPos).magnitude;
+
+		if (!leftHole.blocked && !middleHole.blocked && !rightHole.blocked) {
+			getNextHole (leftDist, middleDist, rightDist);
+			print ("current position is " + currentPosition);
+			changePosition ();
+		} else if (leftHole.blocked) {
+			getNextHole (-999f, middleDist, rightDist);
+			changePosition ();
+		} else if (middleHole.blocked) {
+			getNextHole (leftDist, -999f, rightDist);
+			changePosition ();
+		} else if (rightHole.blocked) {
+			getNextHole (leftDist, middleDist, -999f);
+			changePosition ();
+		}
+
+	}
+
+	void getNextHole(float left, float middle, float right) {
+		switch (currentPosition) {
+		case 0:
+			if (left > middle && left > right) {
+				break;
+			}
+			if (middle > right) {
+				currentPosition = 1;
+			} else  if(right > middle) {
+				currentPosition = 2;
+			}
+			break;
+		case 1:
+			if (middle > left && middle > right) {
+				break;
+			}
+			if (left > right) {
+				currentPosition = 0;
+			} else if(right > left) {
+				currentPosition = 2;
+			}
+			break;
+		case 2:
+			if (right > left && right > middle) {
+				break;
+			}
+			if (left > middle) {
+				currentPosition = 0;
+			} else if(middle > left) {
+				currentPosition = 1;
+			}
+			break;
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
-		float currentY = transform.position.y;
+		/*float currentY = transform.position.y;
 		if (currentY >= upperY) {
 			down = true;
 		} 
@@ -58,52 +118,17 @@ public class Walrus : MonoBehaviour {
 			transform.position = new Vector2 (transform.position.x, currentY + deltaY);
 		} else {
 			transform.position = new Vector2 (transform.position.x, currentY - deltaY);
-		}
+		}*/
 
 		float currentTime = Time.realtimeSinceStartup;
 		//print (currentTime - spawnTime);
 		if (currentTime - spawnTime >= timeLimit) {
-			currentPosition++;
-			currentPosition = currentPosition % 3; 
-			changePosition ();
+			stuff ();
 			spawnTime = currentTime;
 		}
 	}
 
 	void changePosition() {
-		goDown ();
-		print ("curr " + currentPosition);
-		if (currentPosition == 0) {
-			if (leftHole.blocked) {
-				currentPosition++;
-			}
-		} else if (currentPosition == 1) {
-			if (middleHole.blocked) {
-				currentPosition++;
-			} 
-		} else {
-			print (currentPosition);
-			if (rightHole.blocked) {
-				currentPosition = 0;
-			} 
-		}
-		move ();
-	}
-
-	void goDown() {
-		print ("inside down");
-		print (down);
-		float currentY = transform.position.y;
-		while (currentY > upperY) {
-			transform.position = new Vector2 (transform.position.x, currentY - deltaY);
-			currentY = transform.position.y;
-			print ("current y is " + currentY);
-			down = false;
-		}
-	
-	}
-
-	void move() {
 		switch (currentPosition) {
 		case 0:
 			transform.position = leftPos;
@@ -117,13 +142,23 @@ public class Walrus : MonoBehaviour {
 		}
 	}
 
+	void goDown() {
+		print ("inside down");
+		print (down);
+		float currentY = transform.position.y;
+		while (currentY > upperY) {
+			transform.position = new Vector2 (transform.position.x, currentY - deltaY);
+			currentY = transform.position.y;
+			print ("current y is " + currentY);
+			down = false;
+		}
+
+	}
+
 	public void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.name == "Player") {
 			player.SendMessage ("decreaseHealth", .15f);
 		}
 	}
-
-
-
 
 }
