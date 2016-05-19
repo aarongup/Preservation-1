@@ -16,6 +16,8 @@ public class GenericAnimalBehavior : MonoBehaviour {
    const float mScanBarOffsetY = .75f; //offset from the objects position in y direction
 	public Fox foxScript = null;
 
+	public string animal;
+
 	// Use this for initialization
 	void Start () {
       mCurrentScanValue = 0;
@@ -52,7 +54,7 @@ public class GenericAnimalBehavior : MonoBehaviour {
 	void Update () {
 	   if(mCurrentScanValue >= mTargetScanValue) {
 			CameraScript cam = GameObject.Find ("Main Camera").GetComponent<CameraScript> ();
-			cam.animalCount++;
+			cam.SendMessage ("increaseScanCount", animal);
          	Destroy(gameObject);
       }
 
