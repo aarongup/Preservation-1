@@ -74,7 +74,6 @@ public class Player : MonoBehaviour {
 			}
 		}
 
-      //anim.setBool("Grounded", grounded);
       //anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x);
 
       handleGoingOffScreen();
@@ -135,8 +134,12 @@ public class Player : MonoBehaviour {
 
       //fake friction to slow down speed of player
       if (grounded) {
-			rb2d.velocity = easeVelocity;
+         anim.SetBool("Jumping", false);
+         rb2d.velocity = easeVelocity;
 		}
+      else {
+         anim.SetBool("Jumping", true);
+      }
 
 		if (canClimb) {
 			rb2d.AddForce (Vector2.up * 500f * Input.GetAxis ("Vertical"));

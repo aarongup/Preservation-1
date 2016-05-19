@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: f99d4d23be676b341a972f1dc4399c9b
+timeCreated: 1463624117
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PlayerJumpSpriteSheet_0
+    21300002: PlayerJumpSpriteSheet_1
+    21300004: PlayerJumpSpriteSheet_2
+    21300006: PlayerJumpSpriteSheet_3
+    21300008: PlayerJumpSpriteSheet_4
+    21300010: PlayerJumpSpriteSheet_5
+    21300012: PlayerJumpSpriteSheet_6
+    21300014: PlayerJumpSpriteSheet_7
+    21300016: PlayerJumpSpriteSheet_8
+    21300018: PlayerJumpSpriteSheet_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PlayerJumpSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5004
+        width: 567
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.5, y: 82.69995}
+        - {x: -5.5, y: 82.69995}
+        - {x: -56.5, y: 58.69995}
+        - {x: -56.5, y: -74.30005}
+        - {x: -35.5, y: -90.30005}
+        - {x: -9.5, y: -102.30005}
+        - {x: 34.5, y: -102.30005}
+        - {x: 48.5, y: -101.30005}
+        - {x: 68.5, y: -81.30005}
+        - {x: 68.5, y: 69.69995}
+    - name: PlayerJumpSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4448
+        width: 567
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.5, y: -89.599976}
+        - {x: -45.5, y: -93.599976}
+        - {x: 29.5, y: -93.599976}
+        - {x: 62.5, y: -67.599976}
+        - {x: 62.5, y: 47.400024}
+        - {x: 55.5, y: 64.400024}
+        - {x: 42.5, y: 80.400024}
+        - {x: -2.5, y: 80.400024}
+        - {x: -46.5, y: 44.400024}
+    - name: PlayerJumpSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3892
+        width: 567
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.5, y: -55.400024}
+        - {x: 24.5, y: -34.400024}
+        - {x: 23.5, y: -34.400024}
+        - {x: 20.5, y: -29.400024}
+        - {x: 27.5, y: -35.400024}
+        - {x: 40.5, y: -39.400024}
+        - {x: 65.5, y: -40.400024}
+        - {x: 65.5, y: 83.599976}
+        - {x: -15.5, y: 83.599976}
+        - {x: -26.5, y: 62.599976}
+        - {x: -58.5, y: 14.599976}
+        - {x: -58.5, y: -91.400024}
+        - {x: -38.5, y: -98.400024}
+        - {x: -34.5, y: -98.400024}
+        - {x: -27.5, y: -94.400024}
+        - {x: -23.5, y: -86.400024}
+        - {x: 7.5, y: -98.400024}
+        - {x: 32.5, y: -98.400024}
+    - name: PlayerJumpSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3336
+        width: 567
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: -23.199951}
+        - {x: 39.5, y: -25.199951}
+        - {x: 58.5, y: 0.8000488}
+        - {x: 58.5, y: 16.800049}
+        - {x: 49.5, y: 21.800049}
+        - {x: 39.5, y: 18.800049}
+        - {x: 41.5, y: 75.80005}
+        - {x: 16.5, y: 84.80005}
+        - {x: -35.5, y: 84.80005}
+        - {x: -63.5, y: 57.80005}
+        - {x: -70.5, y: 21.800049}
+        - {x: -70.5, y: -80.19995}
+        - {x: -67.5, y: -85.19995}
+        - {x: 32.5, y: -85.19995}
+        - {x: 40.5, y: -76.19995}
+        - {x: 38.5, y: -66.19995}
+        - {x: 46.5, y: -34.19995}
+    - name: PlayerJumpSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2780
+        width: 567
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.5, y: 83.5}
+        - {x: -70.5, y: 47.5}
+        - {x: -73.5, y: 28.5}
+        - {x: -73.5, y: -84.5}
+        - {x: 55.5, y: -84.5}
+        - {x: 56.5, y: -65.5}
+        - {x: 56.5, y: 27.5}
+        - {x: 28.5, y: 83.5}
+    - name: PlayerJumpSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2224
+        width: 567
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 83.70001}
+        - {x: -75.5, y: 15.700012}
+        - {x: -75.5, y: -78.29999}
+        - {x: 57.5, y: -78.29999}
+        - {x: 57.5, y: 46.700012}
+        - {x: 32.5, y: 83.70001}
+    - name: PlayerJumpSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1668
+        width: 567
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.5, y: 83.400024}
+        - {x: -56.5, y: 78.400024}
+        - {x: -78.5, y: 10.400024}
+        - {x: -78.5, y: -71.599976}
+        - {x: 65.5, y: -71.599976}
+        - {x: 65.5, y: 20.400024}
+        - {x: 44.5, y: 83.400024}
+    - name: PlayerJumpSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1112
+        width: 567
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 83.600006}
+        - {x: -19.5, y: 82.600006}
+        - {x: -80.5, y: 22.600006}
+        - {x: -80.5, y: -95.399994}
+        - {x: 42.5, y: -95.399994}
+        - {x: 65.5, y: -89.399994}
+        - {x: 65.5, y: 26.600006}
+        - {x: 21.5, y: 83.600006}
+    - name: PlayerJumpSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 556
+        width: 567
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62.5, y: -81.2}
+        - {x: 62.5, y: -74.2}
+        - {x: 61.5, y: -69.2}
+        - {x: 54.5, y: 30.800003}
+        - {x: 22.5, y: 83.8}
+        - {x: -24.5, y: 83.8}
+        - {x: -52.5, y: 64.8}
+        - {x: -83.5, y: -8.199997}
+        - {x: -83.5, y: -44.199997}
+        - {x: -14.5, y: -93.2}
+        - {x: -1.5, y: -93.2}
+        - {x: 5.5, y: -83.2}
+        - {x: 17.5, y: -85.2}
+        - {x: 40.5, y: -90.2}
+    - name: PlayerJumpSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 567
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.5, y: 83.5}
+        - {x: -30.5, y: 83.5}
+        - {x: -70.5, y: 4.5}
+        - {x: -70.5, y: -69.5}
+        - {x: -30.5, y: -102.5}
+        - {x: 52.5, y: -102.5}
+        - {x: 63.5, y: -93.5}
+        - {x: 63.5, y: 35.5}
+        - {x: 34.5, y: 82.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

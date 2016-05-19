@@ -93,6 +93,7 @@
     <Compile Include="Assets\Resources\Scripts\WorldScritps\ToggleMaze.cs" />
     <Compile Include="Assets\Resources\Scripts\WorldScritps\TogglePlatform.cs" />
     <Compile Include="Assets\Resources\Scripts\walruspuzzle\Hole.cs" />
+    <Compile Include="Assets\Resources\Scripts\walruspuzzle\IceBlock.cs" />
     <Compile Include="Assets\Resources\Scripts\walruspuzzle\Walrus.cs" />
     <Compile Include="Assets\Resources\Scripts\walruspuzzle\movingPlatform.cs" />
     <Compile Include="Assets\Resources\Scripts\walruspuzzle\platform.cs" />
