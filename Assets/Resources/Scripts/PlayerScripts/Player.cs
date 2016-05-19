@@ -142,8 +142,8 @@ public class Player : MonoBehaviour {
       }
 
 		if (canClimb) {
-			rb2d.AddForce (Vector2.up * 500f * Input.GetAxis ("Vertical"));
-			rb2d.AddForce (Vector2.right * 500f * Input.GetAxis ("Horizontal"));
+			rb2d.AddForce (Vector2.up * 200f * Input.GetAxis ("Vertical"));
+			rb2d.AddForce (Vector2.right * 200f * Input.GetAxis ("Horizontal"));
 		}
 
 		//moving the player
