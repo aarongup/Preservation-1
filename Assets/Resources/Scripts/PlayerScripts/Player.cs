@@ -20,7 +20,7 @@ public class Player : MonoBehaviour {
 	public bool canDoubleJump;
 	public bool airborne;
 
-	public bool onTree = false;
+   public bool onTree = false;
 
 
 	public float currentHealth;
@@ -30,9 +30,11 @@ public class Player : MonoBehaviour {
 	private Animator anim;
 	public GUIBarScript GBS;
 
+   //cheats
+   public bool invincible;
 
-	//ALL OF THE BELOW ARE FOR CLIMBING ONLY
-	public LayerMask treeLayer;
+   //ALL OF THE BELOW ARE FOR CLIMBING ONLY
+   public LayerMask treeLayer;
 	public Transform treeCheck;
 	public float treeCheckRadius = 2f;
 	public float originalGravity;
@@ -49,6 +51,7 @@ public class Player : MonoBehaviour {
 		airborne = false;
 		originalGravity = rb2d.gravityScale;
 		climbing = false;
+      invincible = false;
 	}
 
 	// Update is called once per frame
@@ -120,6 +123,9 @@ public class Player : MonoBehaviour {
          climb();
       }
 
+      if (Input.GetKeyDown(KeyCode.I)) {
+         invincible = !invincible;
+      }
    }
 
 	void FixedUpdate() {
@@ -170,6 +176,9 @@ public class Player : MonoBehaviour {
    }
 
 	void Die() {
+      if (invincible) {
+         return;
+      }
       transform.position = startPosition;
       currentHealth = maxHealth;
 		if (timer <= 0) {
