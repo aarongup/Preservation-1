@@ -54,6 +54,7 @@ public class CameraScript : MonoBehaviour {
 		if (animalCount1 >= winConditionAnimal1 && animalCount2 >= winConditionAnimal2 && animalCount3 >= winConditionAnimal3) {
 			SceneManager.LoadScene("WinScreen");
 		} else {
+			
 			gui.text = animal1 + " Scanned " + animalCount1 + " / " + winConditionAnimal1;
 			gui2.text = animal2 + " Scanned " + animalCount2 + " / " + winConditionAnimal2;
 			gui3.text = animal3 + " Scanned " + animalCount3 + " / " + winConditionAnimal3;

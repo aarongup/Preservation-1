@@ -106,7 +106,7 @@ public class Bear : MonoBehaviour {
 		}
 				
 
-		if (other.gameObject.tag == "Wall") {
+		if (other.gameObject.tag == "Wall" || other.gameObject.tag == "Animal") {
 			Vector3 currRot = gameObject.transform.eulerAngles;
 			currRot.y += 180;
 			gameObject.transform.eulerAngles = currRot;

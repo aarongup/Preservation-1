@@ -20,6 +20,8 @@ public class Fox : MonoBehaviour {
 	public Sprite foxSprite;
 	public Sprite burrowedSprite;
 	private SpriteRenderer myRenderer;
+	private Animator anim;
+
 	public float lineScalar = 1.5f;
 	private float timer = 0f;
 
@@ -29,6 +31,7 @@ public class Fox : MonoBehaviour {
 	void Start () {
 	
 		speed = 4f;
+		anim = gameObject.GetComponent<Animator>();
 		myRB = gameObject.GetComponent<Rigidbody2D> ();
 		sight = gameObject.GetComponent<SightScript> ();
 		curState = State.Patrol;
@@ -124,6 +127,7 @@ public class Fox : MonoBehaviour {
 
 		if (timer <= 0) {
 			curState = State.Patrol;
+			anim.enabled = true;
 			isBurrowed = false;
 			myRenderer.sprite = foxSprite;
 			gameObject.transform.localScale = new Vector3 (2.5f, 2.5f, 2.5f);
@@ -141,6 +145,7 @@ public class Fox : MonoBehaviour {
 		}
 
 		if (other.gameObject.layer == LayerMask.NameToLayer("Ground") && jumped == true) {
+			anim.enabled = false;
 			jumped = false;
 			curState = State.Burrowed;
 			isBurrowed = true;
@@ -149,7 +154,7 @@ public class Fox : MonoBehaviour {
 			gameObject.transform.localScale = new Vector3 (1f, .5f, 1f);
 		}
 
-		if (other.gameObject.tag == "Wall") {
+		if (other.gameObject.tag == "Wall" || other.gameObject.tag == "Animal") {
 			Vector3 currRot = gameObject.transform.eulerAngles;
 			currRot.y += 180;
 			gameObject.transform.eulerAngles = currRot;
