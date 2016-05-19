@@ -55,7 +55,6 @@ public class Walrus : MonoBehaviour {
 
 		if (!leftHole.blocked && !middleHole.blocked && !rightHole.blocked) {
 			getNextHole (leftDist, middleDist, rightDist);
-			print ("current position is " + currentPosition);
 			changePosition ();
 		} else if (leftHole.blocked) {
 			getNextHole (-999f, middleDist, rightDist);

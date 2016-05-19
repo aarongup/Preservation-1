@@ -20,6 +20,8 @@ public class Owl : MonoBehaviour {
 	public float speed;
 	public float distance;
 	public bool flip;
+	public Vector3 startPosition;
+	public Vector3 curPosition;
 
 	private float prevProj;
 
@@ -36,12 +38,18 @@ public class Owl : MonoBehaviour {
 		if (null == projectile) {
 			projectile = Resources.Load ("Prefabs/Egg") as GameObject;
 		}
+		startPosition = gameObject.transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		//Debug.Log (curState);
-		distance--;
+
+		curPosition = gameObject.transform.position;
+
+		if (curPosition.x >= startPosition.x + distance || curPosition.x <= startPosition.x - distance) {
+			flip = !flip;
+		}
 		if (!flip) {
 			gameObject.transform.Translate (Vector3.right * speed * Time.deltaTime);
 			gameObject.transform.localScale = new Vector3 (1f, 1f, 1f);
@@ -49,10 +57,7 @@ public class Owl : MonoBehaviour {
 			gameObject.transform.Translate (Vector3.left * speed * Time.deltaTime);
 			gameObject.transform.localScale = new Vector3 (-1f, 1f, 1f);
 		}
-		if (distance <= 0) {
-			distance = 50;
-			flip = !flip;
-		}
+
 
 		switch (curState) {
 		case State.Charge:
@@ -73,7 +78,7 @@ public class Owl : MonoBehaviour {
 			RockBehavior egg = e.GetComponent<RockBehavior> ();
 			if (null != egg) {
 				e.transform.position = transform.position;
-				egg.SetForwardDirection (lineCastPos);
+				egg.SetForwardDirection (gameObject.transform.up);
 			}
 		}
 		curState = State.Patrol;
@@ -95,7 +100,7 @@ public class Owl : MonoBehaviour {
 	{		
 		if (other.gameObject.name == "Player") {
 			GameObject p =  GameObject.Find ("Player");
-			p.SendMessage ("decreaseHealth", .15f);
+			p.SendMessage ("decreaseHealth", .05f);
 		}
 	}
 

@@ -28,12 +28,14 @@ public class RockBehavior : MonoBehaviour {
 		if (other.gameObject.name == "Player") {
 			Destroy(this.gameObject);
 			GameObject p =  GameObject.Find ("Player");
-			p.SendMessage ("decreaseHealth", .10f);
+			p.SendMessage ("decreaseHealth", .05f);
 		}
 		else if (other.gameObject.layer == 8) {
 			Destroy(gameObject);
 		}
+
+		if(other.gameObject.layer == LayerMask.NameToLayer("Ground")) {
+			Destroy(gameObject);
+		}
 	}
-
-
 }
