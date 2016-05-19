@@ -147,9 +147,10 @@ public class Player : MonoBehaviour {
          anim.SetBool("Jumping", true);
       }
 
-		//moving the player
-		rb2d.AddForce (Vector2.right * speed * h);
-
+      //moving the player
+      if (!climbing) {
+         rb2d.AddForce(Vector2.right * speed * h);
+      }
 
 		if (rb2d.velocity.x > maxSpeed) {
 			rb2d.velocity = new Vector2 (maxSpeed, rb2d.velocity.y);
@@ -197,11 +198,19 @@ public class Player : MonoBehaviour {
       climbing = true;
       anim.enabled = true;
       rb2d.gravityScale = 0;
+      rb2d.velocity = new Vector2(0, 0);
    }
 
    void climb() {
-      transform.Translate(Vector2.up * 4f * Input.GetAxis("Vertical") * Time.deltaTime);
-      transform.Translate(Vector2.right * .5f * Input.GetAxis("Horizontal") * Time.deltaTime);
+      if (Input.GetAxis("Vertical") == 0 && Input.GetAxis("Horizontal") == 0) {
+         anim.enabled = false;
+      }
+      else {
+         anim.enabled = true;
+         transform.Translate(Vector2.up * 4f * Input.GetAxis("Vertical") * Time.deltaTime);
+         //see movement code in fixed update for alternative
+         transform.Translate(Vector2.right * 2f * Input.GetAxis("Horizontal") * Time.deltaTime);
+      }
    }
 
    void exitClimbingState() {
