@@ -8,6 +8,7 @@ public class Owl : MonoBehaviour {
 
 	public GameObject projectile = null;
 	public float projectileInterval = 1f;
+	public float timer;
 
 	public LayerMask foxMask;
 	public SightScript sight;
@@ -45,17 +46,31 @@ public class Owl : MonoBehaviour {
 	void Update () {
 		//Debug.Log (curState);
 
+		timer -= Time.deltaTime;
 		curPosition = gameObject.transform.position;
 
 		if (curPosition.x >= startPosition.x + distance || curPosition.x <= startPosition.x - distance) {
 			flip = !flip;
+			if (!flip) {
+				gameObject.transform.Translate (Vector3.right * speed * Time.deltaTime);
+			} else {
+				gameObject.transform.Translate (Vector3.left * speed * Time.deltaTime);
+
+			}
+			if (timer <= 0) {
+				Vector3 currRot = gameObject.transform.eulerAngles;
+				currRot.y += 180;
+				gameObject.transform.eulerAngles = currRot;
+				timer = .5f;
+
+			}
 		}
+
 		if (!flip) {
 			gameObject.transform.Translate (Vector3.right * speed * Time.deltaTime);
-			gameObject.transform.localScale = new Vector3 (1f, 1f, 1f);
 		} else {
 			gameObject.transform.Translate (Vector3.left * speed * Time.deltaTime);
-			gameObject.transform.localScale = new Vector3 (-1f, 1f, 1f);
+
 		}
 
 
@@ -86,7 +101,7 @@ public class Owl : MonoBehaviour {
 
 	void updateFromPatrol() {
 		//Debug.Log ("in patrol");
-		Vector2 lineCastPos = gameObject.transform.position - gameObject.transform.right * myWidth;
+		Vector2 lineCastPos = gameObject.transform.position - (gameObject.transform.right * -1) * myWidth;
 		Debug.DrawLine (lineCastPos, lineCastPos + Vector2.down * lineScalar * 3);
 		bool playerSpotted = Physics2D.Linecast (lineCastPos, lineCastPos + Vector2.down * lineScalar * 3, foxMask);
 		//Debug.Log (playerSpotted);
