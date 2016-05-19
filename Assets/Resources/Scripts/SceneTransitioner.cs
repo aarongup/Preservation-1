@@ -56,7 +56,7 @@ public class SceneTransitioner : MonoBehaviour {
 	}
 
 	private void ReplayService() {
-		LoadScene ("Demo");
+		LoadScene ("Level1");
 	}
 
 	private void MenuService() {

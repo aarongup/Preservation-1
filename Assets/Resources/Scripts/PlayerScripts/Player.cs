@@ -200,7 +200,7 @@ public class Player : MonoBehaviour {
    }
 
    void climb() {
-      transform.Translate(Vector2.up * 2f * Input.GetAxis("Vertical") * Time.deltaTime);
+      transform.Translate(Vector2.up * 4f * Input.GetAxis("Vertical") * Time.deltaTime);
       transform.Translate(Vector2.right * .5f * Input.GetAxis("Horizontal") * Time.deltaTime);
    }
 
