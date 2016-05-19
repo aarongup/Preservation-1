@@ -38,7 +38,7 @@ public class Player : MonoBehaviour {
 	public float originalGravity;
 	public float upSpeed = 0;
 
-	public bool canClimb;
+	public bool climbing;
 
 	// Use this for initialization
 	void Start () {
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour {
 		canDoubleJump = false; 
 		airborne = false;
 		originalGravity = rb2d.gravityScale;
-		canClimb = false;
+		climbing = false;
 	}
 
 	// Update is called once per frame
@@ -69,8 +69,8 @@ public class Player : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.LeftShift) || Input.GetKeyDown (KeyCode.RightShift)) {
 			rb2d.gravityScale = 1f;
-			if (canClimb) {
-				canClimb = !canClimb;
+			if (climbing) {
+				climbing = !climbing;
 			}
 		}
 
@@ -114,6 +114,12 @@ public class Player : MonoBehaviour {
       else {
          anim.SetBool("Firing", false);
       }
+
+      //clibming code section!!!
+      if (climbing) {
+         climb();
+      }
+
    }
 
 	void FixedUpdate() {
@@ -140,11 +146,6 @@ public class Player : MonoBehaviour {
       else {
          anim.SetBool("Jumping", true);
       }
-
-		if (canClimb) {
-			rb2d.AddForce (Vector2.up * 500f * Input.GetAxis ("Vertical"));
-			rb2d.AddForce (Vector2.right * 500f * Input.GetAxis ("Horizontal"));
-		}
 
 		//moving the player
 		rb2d.AddForce (Vector2.right * speed * h);
@@ -189,7 +190,30 @@ public class Player : MonoBehaviour {
 		canDoubleJump = true;
 	}
 
-	void OnGUI() {
+   #region Climbing Code
+
+   void enterClimbingState() {
+      anim.SetBool("Climbing", true);
+      climbing = true;
+      anim.enabled = true;
+      rb2d.gravityScale = 0;
+   }
+
+   void climb() {
+      transform.Translate(Vector2.up * 2f * Input.GetAxis("Vertical") * Time.deltaTime);
+      transform.Translate(Vector2.right * .5f * Input.GetAxis("Horizontal") * Time.deltaTime);
+   }
+
+   void exitClimbingState() {
+      anim.SetBool("Climbing", false);
+      anim.enabled = true;
+      climbing = false;
+      rb2d.gravityScale = originalGravity;
+   }
+
+   #endregion
+
+   void OnGUI() {
 		GUI.contentColor = Color.green;
 		GUI.Label (new Rect (0, 0, 100, 200), "Health " + (int)Mathf.Ceil (currentHealth * 100));
 	}
@@ -208,16 +232,13 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other) {
 		if (other.gameObject.layer == LayerMask.NameToLayer ("Climbable")) {
-			canClimb = true;
-			rb2d.velocity = new Vector2 (0f, 0f);
-			rb2d.gravityScale = .5f;
+         enterClimbingState();
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D other) {
 		if (other.gameObject.layer == LayerMask.NameToLayer ("Climbable")) {
-			canClimb = false;
-			rb2d.gravityScale = 1f;
+         exitClimbingState();
 		}
 	}
 
