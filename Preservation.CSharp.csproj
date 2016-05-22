@@ -67,6 +67,7 @@
     <Compile Include="Assets\GradientGUIBars\Script\GUIBarScript.cs" />
     <Compile Include="Assets\GradientGUIBars\Script\MoreButtonScript.cs" />
     <Compile Include="Assets\GradientGUIBars\Script\MoveCameraScript.cs" />
+    <Compile Include="Assets\PlayerStats.cs" />
     <Compile Include="Assets\Resources\Scripts\AlternateBG.cs" />
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\Bear.cs" />
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\Fox.cs" />
