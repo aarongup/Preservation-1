@@ -72,6 +72,7 @@ public class Player : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.LeftShift) || Input.GetKeyDown (KeyCode.RightShift)) {
 			rb2d.gravityScale = 1f;
+			transform.parent = null;
 			if (climbing) {
 				climbing = !climbing;
 			}
