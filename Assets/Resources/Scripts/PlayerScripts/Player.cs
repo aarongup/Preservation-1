@@ -83,20 +83,20 @@ public class Player : MonoBehaviour {
       handleGoingOffScreen();
 
 		//To flip sprite based on direction 
-		Vector3 mousePosition = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, (transform.position.z - Camera.main.transform.position.z)));
+		//Vector3 mousePosition = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, (transform.position.z - Camera.main.transform.position.z)));
 
 		/*Ray myMouse = Camera.main.ScreenPointToRay (Input.mousePosition);
 		Debug.DrawRay(myMouse.origin, myMouse.direction * 10, Color.yellow);*/
 
 		//To flip sprite based on direction 
-		if (mousePosition.x < transform.position.x) {
+		if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKeyDown("a")) {// < transform.position.x) {
 			transform.localScale = new Vector3 (-sizeScalar, sizeScalar, 1);
 		}
-		else if (mousePosition.x > transform.position.x) {
+		else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKeyDown("d")) {//mousePosition.x > transform.position.x) {
 			transform.localScale = new Vector3 (sizeScalar, sizeScalar, 1);
 		}
 
-		if (Input.GetButtonDown ("Jump") || Input.GetKeyDown("w")) {
+		if (Input.GetButtonDown ("Jump") || Input.GetKeyDown("w") || Input.GetKeyDown(KeyCode.UpArrow)) {
 			if (grounded) {
 				rb2d.AddForce (Vector2.up * jumpPower * 1.5f);
 				airborne = true;
