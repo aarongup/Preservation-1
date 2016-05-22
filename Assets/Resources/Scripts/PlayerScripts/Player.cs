@@ -12,7 +12,7 @@ public class Player : MonoBehaviour {
 	public float livesLeft = 3f;
 	public float timer = 0f;
 	public float sizeScalar = .193f;
-   public Vector3 startPosition;
+    public Vector3 startPosition;
 	public Text lifeCounter;
 
 
@@ -20,7 +20,7 @@ public class Player : MonoBehaviour {
 	public bool canDoubleJump;
 	public bool airborne;
 
-   public bool onTree = false;
+    public bool onTree = false;
 
 
 	public float currentHealth;
@@ -71,7 +71,7 @@ public class Player : MonoBehaviour {
 		GBS.Value = currentHealth;
 
 		if (Input.GetKeyDown (KeyCode.LeftShift) || Input.GetKeyDown (KeyCode.RightShift)) {
-			rb2d.gravityScale = 1f;
+			rb2d.gravityScale = 3f;
 			transform.parent = null;
 			if (climbing) {
 				climbing = !climbing;

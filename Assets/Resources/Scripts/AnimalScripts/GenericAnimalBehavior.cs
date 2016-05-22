@@ -6,6 +6,7 @@ public class GenericAnimalBehavior : MonoBehaviour {
    public float mCurrentScanValue;
    public float mTargetScanValue = 100;
    public float mScanRate = 50;//scan points per second
+	public float scanDecayRate;
 
    //scan progresss bar
    Vector2 scanBarPos;
@@ -22,6 +23,7 @@ public class GenericAnimalBehavior : MonoBehaviour {
 	void Start () {
       mCurrentScanValue = 0;
       scanBarSize = new Vector2(50, 10);
+		scanDecayRate = .2f;
 
       barEmpty = new Texture2D(1, 1);
       Color [] pixels = barEmpty.GetPixels();
@@ -52,11 +54,20 @@ public class GenericAnimalBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	   if(mCurrentScanValue >= mTargetScanValue) {
+		
+		if(mCurrentScanValue >= mTargetScanValue) {
 			CameraScript cam = GameObject.Find ("Main Camera").GetComponent<CameraScript> ();
 			cam.SendMessage ("increaseScanCount", animal);
-         	Destroy(gameObject);
-      }
+			Destroy(gameObject);
+		} else if (mCurrentScanValue > 0) {
+			mCurrentScanValue -= scanDecayRate;
+		}
+
+		if (mCurrentScanValue < 0) {
+			mCurrentScanValue = 0;
+		}
+
+	   
 
       //update position of scan progress bar based on the animal's position
       Vector2 currentPosition = new Vector2(transform.position.x, transform.position.y + mScanBarOffsetY);
