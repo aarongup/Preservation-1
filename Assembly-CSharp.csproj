@@ -49,6 +49,7 @@
      <Compile Include="Assets\GradientGUIBars\Script\GUIBarScript.cs" />
      <Compile Include="Assets\GradientGUIBars\Script\MoreButtonScript.cs" />
      <Compile Include="Assets\GradientGUIBars\Script\MoveCameraScript.cs" />
+     <Compile Include="Assets\Resources\PlayerStats.cs" />
      <Compile Include="Assets\Resources\Scripts\AlternateBG.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimalScripts\Bear.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimalScripts\Fox.cs" />
@@ -79,6 +80,7 @@
      <Compile Include="Assets\Resources\Scripts\walruspuzzle\Walrus.cs" />
      <Compile Include="Assets\Resources\Scripts\walruspuzzle\movingPlatform.cs" />
      <Compile Include="Assets\Resources\Scripts\walruspuzzle\platform.cs" />
+     <None Include="Assets\Resources\Credits.txt" />
      <None Include="Assets\GradientGUIBars\ReadMe\AboutFonts.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

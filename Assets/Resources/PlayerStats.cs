@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
-[]
+
 public class PlayerStats {
-   List<bool> levelCompleted;
+   /*List<bool> levelCompleted;
 
    PlayerStats() {
       levelCompleted = new List<bool>();
@@ -17,5 +17,5 @@ public class PlayerStats {
          levelCompleted.Add(false);
       }
 
-   }
+   }*/
 }
