@@ -75,6 +75,9 @@ public class Player : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.LeftShift) || Input.GetKeyDown (KeyCode.RightShift)) {
 			rb2d.gravityScale = 3f;
 			transform.parent = null;
+			SpriteRenderer myRenderer = gameObject.GetComponent<SpriteRenderer> ();
+			myRenderer.color = new Color (1f, 1f, 1f, 1f);
+			grounded = false;
 			if (climbing) {
 				climbing = !climbing;
 			}

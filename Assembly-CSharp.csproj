@@ -51,13 +51,13 @@
      <Compile Include="Assets\GradientGUIBars\Script\MoveCameraScript.cs" />
      <Compile Include="Assets\Resources\PlayerStats.cs" />
      <Compile Include="Assets\Resources\Scripts\AlternateBG.cs" />
+     <Compile Include="Assets\Resources\Scripts\AnimalScripts\BananaBehavior.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimalScripts\Bear.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimalScripts\Fox.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimalScripts\GenericAnimalBehavior.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimalScripts\Monkey.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimalScripts\Owl.cs" />
      <Compile Include="Assets\Resources\Scripts\AnimalScripts\SightScript.cs" />
-     <Compile Include="Assets\Resources\Scripts\BananaBehavior.cs" />
      <Compile Include="Assets\Resources\Scripts\GlobalBehavior.cs" />
      <Compile Include="Assets\Resources\Scripts\GlobalManager.cs" />
      <Compile Include="Assets\Resources\Scripts\HorizMovingPlatform.cs" />
