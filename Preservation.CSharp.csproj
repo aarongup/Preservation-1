@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.4f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -71,13 +69,13 @@
     <Compile Include="Assets\GradientGUIBars\Script\MoveCameraScript.cs" />
     <Compile Include="Assets\Resources\PlayerStats.cs" />
     <Compile Include="Assets\Resources\Scripts\AlternateBG.cs" />
+    <Compile Include="Assets\Resources\Scripts\AnimalScripts\BananaBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\Bear.cs" />
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\Fox.cs" />
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\GenericAnimalBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\Monkey.cs" />
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\Owl.cs" />
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\SightScript.cs" />
-    <Compile Include="Assets\Resources\Scripts\BananaBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\GlobalBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\GlobalManager.cs" />
     <Compile Include="Assets\Resources\Scripts\HorizMovingPlatform.cs" />
@@ -103,9 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GradientGUIBars\ReadMe\AboutFonts.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Assets\Resources\Credits.txt" />
+    <None Include="Assets\Resources\Credits.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

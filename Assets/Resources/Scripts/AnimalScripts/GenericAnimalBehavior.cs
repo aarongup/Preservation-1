@@ -108,4 +108,14 @@ public class GenericAnimalBehavior : MonoBehaviour {
       GUI.EndGroup();
       GUI.EndGroup();
    }
+
+   void OnCollisionEnter2D(Collision2D collisionInfo) {
+      if (collisionInfo.collider.gameObject.tag == "Player") {
+         GameObject p = collisionInfo.collider.gameObject;
+         p.SendMessage("decreaseHealth", .1f);
+         Vector3 awayFromMe = (Vector3)collisionInfo.contacts[0].point - transform.position;
+         p.SendMessage("knockBack", awayFromMe);
+      }
+   }
 }
+

@@ -93,19 +93,17 @@ public class Bear : MonoBehaviour {
 			curState = State.Patrol;
 		}
 	}
-			
 
-	void OnTriggerEnter2D(Collider2D other)
-	{		
-		if (other.gameObject.name == "Player") {
-			GameObject p =  GameObject.Find ("Player");
-			p.SendMessage ("decreaseHealth", .1f);
-			Vector3 currRot = gameObject.transform.eulerAngles;
-			currRot.y += 180;
-			gameObject.transform.eulerAngles = currRot;
-		}
-				
+   void OnCollisionEnter2D(Collision2D collisionInfo) {
+      if (collisionInfo.collider.gameObject.tag == "Player") {
+         Vector3 currRot = gameObject.transform.eulerAngles;
+         currRot.y += 180;
+         gameObject.transform.eulerAngles = currRot;
+      }
+   }
 
+   void OnTriggerEnter2D(Collider2D other)
+	{			
 		if (other.gameObject.tag == "Wall" || other.gameObject.tag == "Animal") {
 			Vector3 currRot = gameObject.transform.eulerAngles;
 			currRot.y += 180;

@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 	public float livesLeft = 3f;
 	public float timer = 0f;
 	public float sizeScalar = .193f;
+   public float knockBackMagnitude;
     public Vector3 startPosition;
 	public Text lifeCounter;
 
@@ -52,7 +53,8 @@ public class Player : MonoBehaviour {
 		originalGravity = rb2d.gravityScale;
 		climbing = false;
       invincible = false;
-	}
+      knockBackMagnitude = 20f;
+   }
 
 	// Update is called once per frame
 	void Update () {
@@ -200,6 +202,15 @@ public class Player : MonoBehaviour {
 	void activateDoubleJump() {
 		canDoubleJump = true;
 	}
+
+   /*
+   *  directionToTravel should have no z-component
+   */
+   void knockBack(Vector3 directionToTravel) {
+      rb2d.velocity = new Vector2(0, 0);
+      Debug.Log("Knock Back Recieved by player");
+      rb2d.velocity = directionToTravel.normalized * knockBackMagnitude;
+   }
 
    #region Climbing Code
 
