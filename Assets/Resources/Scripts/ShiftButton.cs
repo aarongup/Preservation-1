@@ -3,15 +3,20 @@ using System.Collections;
 
 public class ShiftButton : MonoBehaviour {
 	public Sprite button;
+	public float dist;
 
 	private SpriteRenderer rend;
 	private IEnumerator coroutine;
+	private GameObject player;
 
 	private bool playerCollide;
 	private bool appear;
+
 	// Use this for initialization
 	void Start () {
 		rend = GetComponent<SpriteRenderer> ();
+		player = GameObject.FindWithTag("Player");
+
 		playerCollide = false;
 		appear = false;
 		coroutine = null;
@@ -19,6 +24,7 @@ public class ShiftButton : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		distanceToPlayer ();
 		if (playerCollide) {
 			if (!appear) {
 				rend.sprite = button;
@@ -37,6 +43,16 @@ public class ShiftButton : MonoBehaviour {
 		}
 	}
 
+	void distanceToPlayer() {
+		float distance = (transform.position - player.transform.position).magnitude;
+		if (distance < dist) {
+			playerCollide = true;
+		} else {
+			playerCollide = false;
+		}
+		
+	}
+	/*
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "Player") {
 			playerCollide = true;
@@ -47,7 +63,7 @@ public class ShiftButton : MonoBehaviour {
 		if (other.tag == "Player") {
 			playerCollide = false;
 		}
-	}
+	}*/
 
 	IEnumerator Blink(SpriteRenderer sprite, int numTimes, float delay, bool disabled) {
 		for (int i = 0; i < numTimes; i++) {
