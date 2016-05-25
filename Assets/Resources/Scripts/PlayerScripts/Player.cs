@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
 	public float timer = 0f;
 	public float sizeScalar = .193f;
    public float knockBackMagnitude;
-    public Vector3 startPosition;
+   public Vector3 startPosition;
 	public Text lifeCounter;
 
 
@@ -45,7 +45,8 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		rb2d = GetComponent<Rigidbody2D> ();
+      startPosition = transform.position;
+      rb2d = GetComponent<Rigidbody2D> ();
 		anim = gameObject.GetComponent<Animator>();
 		currentHealth = maxHealth;
 		canDoubleJump = false; 

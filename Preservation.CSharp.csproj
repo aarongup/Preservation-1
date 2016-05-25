@@ -85,7 +85,9 @@
     <Compile Include="Assets\Resources\Scripts\PlayerScripts\PowerUpDJ.cs" />
     <Compile Include="Assets\Resources\Scripts\PlayerScripts\ScannerBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\PlayerScripts\groundCheck.cs" />
+    <Compile Include="Assets\Resources\Scripts\PowerUpScript.cs" />
     <Compile Include="Assets\Resources\Scripts\SceneTransitioner.cs" />
+    <Compile Include="Assets\Resources\Scripts\ShiftButton.cs" />
     <Compile Include="Assets\Resources\Scripts\Toggle.cs" />
     <Compile Include="Assets\Resources\Scripts\VertMovingPlatform.cs" />
     <Compile Include="Assets\Resources\Scripts\WorldScritps\CameraScript.cs" />
