@@ -18,7 +18,7 @@ public class Player : MonoBehaviour {
 
 
 	public bool grounded;
-	public bool canDoubleJump;
+	public bool canDoubleJump = false;
 	public bool airborne;
 
     public bool onTree = false;
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour {
       rb2d = GetComponent<Rigidbody2D> ();
 		anim = gameObject.GetComponent<Animator>();
 		currentHealth = maxHealth;
-		canDoubleJump = false; 
+		//canDoubleJump = false; 
 		airborne = false;
 		originalGravity = rb2d.gravityScale;
 		climbing = false;
