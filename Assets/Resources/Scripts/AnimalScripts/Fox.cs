@@ -21,6 +21,7 @@ public class Fox : MonoBehaviour {
 	public Sprite burrowedSprite;
 	private SpriteRenderer myRenderer;
 	private Animator anim;
+	public bool isGrounded;
 
 	public float lineScalar = 1.5f;
 	private float timer = 0f;
@@ -44,6 +45,10 @@ public class Fox : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+		Vector2 lineCastPos = gameObject.transform.position - gameObject.transform.right * myWidth;
+		Debug.DrawLine (lineCastPos, lineCastPos + Vector2.down * lineScalar);
+		isGrounded = Physics2D.Linecast (lineCastPos, lineCastPos + Vector2.down * lineScalar, foxMask);
+
 		switch (curState) {
 		case State.Patrol:
 			updateFromPatrol ();
@@ -59,9 +64,8 @@ public class Fox : MonoBehaviour {
 
 	private void updateFromPatrol() {
 
-		Vector2 lineCastPos = gameObject.transform.position - gameObject.transform.right * myWidth;
-		Debug.DrawLine (lineCastPos, lineCastPos + Vector2.down * lineScalar);
-		bool isGrounded = Physics2D.Linecast (lineCastPos, lineCastPos + Vector2.down * lineScalar, foxMask);
+
+
 
 		if (!isGrounded) {
 			Vector3 currRot = gameObject.transform.eulerAngles;
@@ -80,9 +84,6 @@ public class Fox : MonoBehaviour {
 	}
 
 	private void updateFromCharge() {
-		Vector2 lineCastPos = gameObject.transform.position - gameObject.transform.right * myWidth;
-		Debug.DrawLine (lineCastPos, lineCastPos + (Vector2.down * lineScalar));
-		bool isGrounded = Physics2D.Linecast (lineCastPos, lineCastPos + (Vector2.down * lineScalar), foxMask);
 
 		if (!isGrounded) {
 			Vector3 currRot = gameObject.transform.eulerAngles;
@@ -110,9 +111,6 @@ public class Fox : MonoBehaviour {
 	}
 
 	private void updateFromBurrowed () {
-		Vector2 lineCastPos = gameObject.transform.position - gameObject.transform.right * myWidth;
-		Debug.DrawLine (lineCastPos, lineCastPos + Vector2.down * lineScalar);
-		bool isGrounded = Physics2D.Linecast (lineCastPos, lineCastPos + Vector2.down * lineScalar, foxMask);
 		timer -= Time.deltaTime;
 
 		if (!isGrounded) {
@@ -136,9 +134,14 @@ public class Fox : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{		
-		if (other.gameObject.name == "Player" && !isBurrowed) {
-			GameObject p =  GameObject.Find ("Player");
-			p.SendMessage ("decreaseHealth", .05f);
+
+		if (other.gameObject.layer == LayerMask.NameToLayer("Player") && !isGrounded) {
+			Vector3 currRot = gameObject.transform.eulerAngles;
+			currRot.y += 180;
+			gameObject.transform.eulerAngles = currRot;
+		}
+
+		if (other.gameObject.layer == LayerMask.NameToLayer("Player") && !isBurrowed) {
 			Vector3 currRot = gameObject.transform.eulerAngles;
 			currRot.y += 180;
 			gameObject.transform.eulerAngles = currRot;
