@@ -14,6 +14,7 @@ public class ShiftButton : MonoBehaviour {
 		rend = GetComponent<SpriteRenderer> ();
 		playerCollide = false;
 		appear = false;
+		coroutine = null;
 	}
 	
 	// Update is called once per frame
@@ -28,7 +29,10 @@ public class ShiftButton : MonoBehaviour {
 
 		} else {
 			rend.sprite = null;
-			StopCoroutine (coroutine);
+			if (coroutine != null) {
+				StopCoroutine (coroutine);
+				coroutine = null;
+			} 
 			appear = false;
 		}
 	}
