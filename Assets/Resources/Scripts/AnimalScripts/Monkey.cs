@@ -10,7 +10,7 @@ public class Monkey : MonoBehaviour {
 	private SightScript mySight;
 
 	public const float targetRadius = 3f;
-	public const float projectileInterval = .5f;
+	public const float projectileInterval = .24f;
 	private float prevProj;
 
 	// Use this for initialization
