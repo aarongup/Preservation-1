@@ -7,6 +7,7 @@ public class CameraScript : MonoBehaviour {
 	public string animal1;
 	public string animal2;
 	public string animal3;
+	public string currentLevel;
 
 	public int animalCount1;
 	public int animalCount2;
@@ -52,7 +53,11 @@ public class CameraScript : MonoBehaviour {
 
       
 		if (animalCount1 >= winConditionAnimal1 && animalCount2 >= winConditionAnimal2 && animalCount3 >= winConditionAnimal3) {
-			SceneManager.LoadScene("WinScreen");
+			if (currentLevel == "One") {
+				SceneManager.LoadScene ("WinScreen1");
+			} else {
+				SceneManager.LoadScene ("WinScreen2");
+			}
 		} else {
 			
 			gui.text = animal1 + " Scanned " + animalCount1 + " / " + winConditionAnimal1;

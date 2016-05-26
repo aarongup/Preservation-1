@@ -15,6 +15,7 @@ public class Player : MonoBehaviour {
    public float knockBackMagnitude;
    public Vector3 startPosition;
 	public Text lifeCounter;
+	public String currentLevel;
 
 
 	public bool grounded;
@@ -193,7 +194,11 @@ public class Player : MonoBehaviour {
 			timer = 3f;
 		}
 		if (livesLeft <= 0) {
-			SceneManager.LoadScene ("LoseScreen");
+			if (currentLevel == "One") {
+				SceneManager.LoadScene ("LoseScreen1");
+			} else {
+				SceneManager.LoadScene ("LoseScreen2");	
+			}
 		}
 		//SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}
