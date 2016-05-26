@@ -128,7 +128,7 @@ public class Fox : MonoBehaviour {
 			anim.enabled = true;
 			isBurrowed = false;
 			myRenderer.sprite = foxSprite;
-			gameObject.transform.localScale = new Vector3 (2.5f, 2.5f, 2.5f);
+			gameObject.transform.localScale = new Vector3 (1.25f, 1.25f, 1.25f);
 		}
 	}
 
