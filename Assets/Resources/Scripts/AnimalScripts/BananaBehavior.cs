@@ -28,10 +28,12 @@ public class BananaBehavior : MonoBehaviour {
 			Destroy(this.gameObject);
 			GameObject p =  GameObject.Find ("Player");
 			p.SendMessage ("decreaseHealth", .10f);
+		} else if(other.gameObject.layer == LayerMask.NameToLayer("Ground")) {
+			Destroy(this.gameObject);
 		}
-		else if (other.gameObject.layer == 8) {
+		/*else if (other.gameObject.layer == 8) {
          Destroy(gameObject);
-      }
+      }*/
 	}
 
 
