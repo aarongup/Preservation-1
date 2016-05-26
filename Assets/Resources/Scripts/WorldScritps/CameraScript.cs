@@ -31,9 +31,9 @@ public class CameraScript : MonoBehaviour {
 		animalCount2 = 0;
 		animalCount3 = 0;
 
-		winConditionAnimal1 = 3;
-		winConditionAnimal2 = 3;
-		winConditionAnimal3 = 3;
+		//winConditionAnimal1 = 3;
+		//winConditionAnimal2 = 3;
+		//winConditionAnimal3 = 3;
 
 		smoothTime = .05f;
 		player = GameObject.FindGameObjectWithTag ("Player");
