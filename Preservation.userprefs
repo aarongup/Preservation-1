@@ -1,25 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\AnimalScripts\gibbonBehavior.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/AlternateBG.cs">
     <Files>
-      <File FileName="Assets\Resources\Scripts\AnimalScripts\gibbonBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\PlayerStats.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\PlayerScripts\Player.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\AnimalScripts\Owl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\WorldScritps\ToggleMaze.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\WorldScritps\TogglePlatform.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\PlayerScripts\ScannerBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\HorizMovingPlatform.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\LevelSelector.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\GlobalBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\AnimalScripts\SightScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\SceneTransitioner.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\AnimalScripts\Fox.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\AnimalScripts\GenericAnimalBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\PlayerScripts\groundCheck.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\WorldScritps\RockBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\walruspuzzle\Walrus.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\AnimalScripts\Monkey.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/ShiftButton.cs" Line="11" Column="1" />
+      <File FileName="Assets/Resources/PlayerStats.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/PlayerScripts/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/AnimalScripts/Monkey.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/WorldScritps/CameraScript.cs" Line="52" Column="3" />
+      <File FileName="Assets/Resources/Scripts/AlternateBG.cs" Line="11" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
