@@ -6,7 +6,7 @@ using System.Collections;
 public class Monkey : MonoBehaviour {
 
 	public GameObject projectile = null;
-	public Player player;
+	public GameObject player;
 	private SightScript mySight;
 
 	public const float targetRadius = 3f;
@@ -17,6 +17,7 @@ public class Monkey : MonoBehaviour {
 	void Start () {
 		prevProj = Time.realtimeSinceStartup;
 		mySight = gameObject.GetComponent<SightScript> ();
+		player = GameObject.FindWithTag("Player");
 		if (null == projectile) {
 			projectile = Resources.Load ("Prefabs/projectile") as GameObject;
 		}
