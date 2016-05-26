@@ -1,0 +1,619 @@
+fileFormatVersion: 2
+guid: c383c5bc864af496cb42087cdaf91216
+timeCreated: 1464247009
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Tigre_0
+    21300002: Tigre_1
+    21300004: Tigre_2
+    21300006: Tigre_3
+    21300008: Tigre_4
+    21300010: Tigre_5
+    21300012: Tigre_6
+    21300014: Tigre_7
+    21300016: Tigre_8
+    21300018: Tigre_9
+    21300020: Tigre_10
+    21300022: Tigre_11
+    21300024: Tigre_12
+    21300026: Tigre_13
+    21300028: Tigre_14
+    21300030: Tigre_15
+    21300032: Tigre_16
+    21300034: Tigre_17
+    21300036: Tigre_18
+    21300038: Tigre_19
+    21300040: Tigre_20
+    21300042: Tigre_21
+    21300044: Tigre_22
+    21300046: Tigre_23
+    21300048: Tigre_24
+    21300050: Tigre_25
+    21300052: Tigre_26
+    21300054: Tigre_27
+    21300056: Tigre_28
+    21300058: Tigre_29
+    21300060: Tigre_30
+    21300062: Tigre_31
+    21300064: Tigre_32
+    21300066: Tigre_33
+    21300068: Tigre_34
+    21300070: Tigre_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Tigre_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 144
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 145
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 144
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 144
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_4
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 145
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_5
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 144
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 144
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_7
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 145
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_8
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 144
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 96
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 17}
+        - {x: 17, y: 16}
+        - {x: -18, y: 17}
+        - {x: -23, y: 6}
+        - {x: -23, y: -17}
+        - {x: 23, y: -17}
+        - {x: 23, y: 17}
+    - name: Tigre_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 96
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 17.5}
+        - {x: -15.5, y: 12.5}
+        - {x: -22.5, y: 5.5}
+        - {x: -22.5, y: -16.5}
+        - {x: -21.5, y: -17.5}
+        - {x: 20.5, y: -17.5}
+        - {x: 22.5, y: -15.5}
+        - {x: 22.5, y: 17.5}
+    - name: Tigre_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 96
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 17}
+        - {x: -22, y: -17}
+        - {x: 22, y: -17}
+        - {x: 22, y: 17}
+    - name: Tigre_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 96
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 17}
+        - {x: 17, y: 16}
+        - {x: -16, y: 12}
+        - {x: -23, y: 7}
+        - {x: -23, y: -15}
+        - {x: -22, y: -17}
+        - {x: 23, y: -17}
+        - {x: 23, y: 17}
+    - name: Tigre_13
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 96
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5, y: 17.5}
+        - {x: -15.5, y: 13.5}
+        - {x: -22.5, y: 4.5}
+        - {x: -22.5, y: -8.5}
+        - {x: -21.5, y: -10.5}
+        - {x: -14.5, y: -17.5}
+        - {x: 19.5, y: -17.5}
+        - {x: 22.5, y: -9.5}
+        - {x: 22.5, y: 17.5}
+    - name: Tigre_14
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 96
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 17}
+        - {x: -15, y: 12}
+        - {x: -22, y: 7}
+        - {x: -22, y: -17}
+        - {x: 22, y: -17}
+        - {x: 22, y: 16}
+        - {x: 21, y: 17}
+    - name: Tigre_15
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 96
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.5, y: 19.5}
+        - {x: -23.5, y: -17.5}
+        - {x: -22.5, y: -19.5}
+        - {x: 20.5, y: -19.5}
+        - {x: 23.5, y: -14.5}
+        - {x: 23.5, y: 19.5}
+    - name: Tigre_16
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 96
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20}
+        - {x: -22.5, y: 11}
+        - {x: -22.5, y: -18}
+        - {x: -15.5, y: -20}
+        - {x: 21.5, y: -20}
+        - {x: 22.5, y: -16}
+        - {x: 22.5, y: 20}
+    - name: Tigre_17
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 96
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 17}
+        - {x: -22, y: 9}
+        - {x: -22, y: -17}
+        - {x: 22, y: -17}
+        - {x: 22, y: 16}
+        - {x: 21, y: 17}
+    - name: Tigre_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 48
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 17}
+        - {x: -23, y: -14}
+        - {x: -21, y: -17}
+        - {x: 20, y: -17}
+        - {x: 23, y: -11}
+        - {x: 23, y: 12}
+        - {x: 1, y: 17}
+    - name: Tigre_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 48
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.5, y: 17.5}
+        - {x: -22.5, y: 17.5}
+        - {x: -22.5, y: -4.5}
+        - {x: -21.5, y: -5.5}
+        - {x: -19.5, y: -13.5}
+        - {x: -16.5, y: -17.5}
+        - {x: 17.5, y: -17.5}
+        - {x: 22.5, y: -14.5}
+        - {x: 22.5, y: 13.5}
+    - name: Tigre_20
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 48
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 17}
+        - {x: -22, y: -17}
+        - {x: 22, y: -17}
+        - {x: 22, y: 12}
+        - {x: 19, y: 17}
+    - name: Tigre_21
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 48
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 16}
+        - {x: 9, y: 17}
+        - {x: -23, y: 17}
+        - {x: -23, y: -14}
+        - {x: -21, y: -17}
+        - {x: 17, y: -17}
+        - {x: 22, y: -11}
+        - {x: 23, y: -10}
+        - {x: 23, y: 6}
+    - name: Tigre_22
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 48
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 17.5}
+        - {x: -22.5, y: -4.5}
+        - {x: -20.5, y: -17.5}
+        - {x: 21.5, y: -17.5}
+        - {x: 22.5, y: -16.5}
+        - {x: 22.5, y: 14.5}
+        - {x: 17.5, y: 17.5}
+    - name: Tigre_23
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 48
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 17}
+        - {x: -22, y: -16}
+        - {x: -21, y: -17}
+        - {x: 22, y: -17}
+        - {x: 22, y: 14}
+        - {x: 16, y: 17}
+    - name: Tigre_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.5, y: 19.5}
+        - {x: -23.5, y: 19.5}
+        - {x: -23.5, y: -18.5}
+        - {x: -22.5, y: -19.5}
+        - {x: 18.5, y: -19.5}
+        - {x: 23.5, y: -14.5}
+        - {x: 23.5, y: 11.5}
+    - name: Tigre_25
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 48
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: -15}
+        - {x: 22.5, y: 17}
+        - {x: 21.5, y: 20}
+        - {x: -22.5, y: 20}
+        - {x: -22.5, y: -9}
+        - {x: -20.5, y: -17}
+        - {x: -17.5, y: -20}
+        - {x: -5.5, y: -20}
+        - {x: -4.5, y: -19}
+        - {x: -3.5, y: -20}
+        - {x: 14.5, y: -20}
+    - name: Tigre_26
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 48
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 17}
+        - {x: -22, y: -16}
+        - {x: -21, y: -17}
+        - {x: 18, y: -17}
+        - {x: 22, y: -14}
+        - {x: 22, y: 8}
+        - {x: 19, y: 17}
+    - name: Tigre_27
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_28
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_29
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_30
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_31
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_32
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_33
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_34
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Tigre_35
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

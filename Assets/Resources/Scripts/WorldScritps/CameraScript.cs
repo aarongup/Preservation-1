@@ -20,7 +20,7 @@ public class CameraScript : MonoBehaviour {
 	private GameObject player;
 	private Vector2 velocity;
 
-	public Vector3 minCameraPos = new Vector3 (6f, 4.5f, -10f);
+	public Vector3 minCameraPos = new Vector3 (6f, 3.5f, -10f);
 	public Vector3 maxCameraPos = new Vector3 (60f, 9.5f, -10f);
 
 
