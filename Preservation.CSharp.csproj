@@ -76,6 +76,7 @@
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\Monkey.cs" />
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\Owl.cs" />
     <Compile Include="Assets\Resources\Scripts\AnimalScripts\SightScript.cs" />
+    <Compile Include="Assets\Resources\Scripts\AnimalScripts\gibbonBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\GlobalBehavior.cs" />
     <Compile Include="Assets\Resources\Scripts\GlobalManager.cs" />
     <Compile Include="Assets\Resources\Scripts\HorizMovingPlatform.cs" />
