@@ -11,10 +11,10 @@ public class ScannerBehavior : MonoBehaviour {
    void Start() {
       visableScannerLine = gameObject.AddComponent<LineRenderer>();
       visableScannerLine.enabled = true;
-		Color32 myRed = new Color32 (0, 51, 204, 255);
-		visableScannerLine.SetColors(Color.black, myRed);
+		Color32 myRed = new Color32 (153, 0, 153, 255);
+		visableScannerLine.SetColors(myRed, Color.red);
       visableScannerLine.SetWidth(startWidth, endWidth);
-      visableScannerLine.material = new Material(Shader.Find("Particles/Additive"));
+      visableScannerLine.material = new Material(Shader.Find("Particles/Multiply"));
       scannerMask = Physics2D.DefaultRaycastLayers & ~(LayerMask.GetMask("Player")); //fancy not symbol !!
    }
 
