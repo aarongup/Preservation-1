@@ -6,7 +6,7 @@ public class GenericAnimalBehavior : MonoBehaviour {
    public float mCurrentScanValue;
    public float mTargetScanValue = 100;
    public float mScanRate = 50;//scan points per second
-	public float scanDecayRate;
+	public float scanDecayRate = .2f;
 
    //scan progresss bar
    Vector2 scanBarPos;
@@ -23,7 +23,6 @@ public class GenericAnimalBehavior : MonoBehaviour {
 	void Start () {
       mCurrentScanValue = 0;
       scanBarSize = new Vector2(50, 10);
-		scanDecayRate = .2f;
 
       barEmpty = new Texture2D(1, 1);
       Color [] pixels = barEmpty.GetPixels();
