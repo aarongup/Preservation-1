@@ -86,8 +86,8 @@ public class GUIBarScript : MonoBehaviour {
 			}
 			LabelStyle.fontSize = (int)TextSize;
 			LabelStyle.font = TextFont;
-
-			TextString = ((int)(Value * 100)).ToString() + "%";
+			int number = (int)Mathf.RoundToInt(Value * 100);
+			TextString = number.ToString() + "%";
 
 			//OnGUI (TextString, LabelStyle);
 			GUI.Label (new Rect(Position.x + TextOffset.x,Position.y + TextOffset.y,ValueBar.width * ScaleSize,ValueBar.height * ScaleSize),TextString,LabelStyle);

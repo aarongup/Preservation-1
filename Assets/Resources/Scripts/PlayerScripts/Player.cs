@@ -252,10 +252,11 @@ public class Player : MonoBehaviour {
 
    #endregion
 
+   /*
    void OnGUI() {
 		GUI.contentColor = Color.green;
 		GUI.Label (new Rect (0, 0, 100, 200), "Health " + (int)Mathf.Ceil (currentHealth * 100));
-	}
+	}*/
 
 	void OnCollisionStay2D(Collision2D other) {
 		if (other.gameObject.tag == "Platform" || other.gameObject.tag == "Set1" || other.gameObject.tag == "Set2") {
