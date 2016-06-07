@@ -118,7 +118,7 @@ public class CameraScript : MonoBehaviour {
 
 			gui.text = animalCount1 + " / " + winConditionAnimal1;
 			gui2.text = animalCount2 + " / " + winConditionAnimal2;
-			gui3.text = animalCount2 + " / " + winConditionAnimal3;
+			gui3.text = animalCount3 + " / " + winConditionAnimal3;
 		}
 			
 		float posX = Mathf.SmoothDamp (transform.position.x, player.transform.position.x, ref velocity.x, smoothTime);
