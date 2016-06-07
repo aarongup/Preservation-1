@@ -35,8 +35,58 @@ public class CameraScript : MonoBehaviour {
 		//winConditionAnimal2 = 3;
 		//winConditionAnimal3 = 3;
 
+		//print ("set1");
+		SetIconUI ("Icon1", animal1);
+		//print ("set2");
+		SetIconUI ("Icon2", animal2);
+		//print ("set3");
+		SetIconUI ("Icon3", animal3);
+
+
 		smoothTime = .05f;
 		player = GameObject.FindGameObjectWithTag ("Player");
+
+	}
+
+	void SetIconUI(string icon, string animal)
+	{
+		// Load animal object
+		UnityEngine.UI.Image tempIcon = GameObject.Find (icon).GetComponent<UnityEngine.UI.Image> ();
+
+		// Load the corresponding animal sprite
+		Sprite tempSprite;
+		switch (animal) 
+		{
+		default:
+			tempSprite = Resources.Load<Sprite> ("Textures/Icons/Default");
+			break;
+
+		case "Monkey":
+			tempSprite = Resources.Load<Sprite> ("Textures/Icons/Monkey");
+			break;
+			
+		case "Owl":
+			tempSprite = Resources.Load<Sprite>("Textures/Icons/Owl");
+			break;
+
+		case "Tiger":
+			tempSprite = Resources.Load<Sprite> ("Textures/Icons/Tiger");
+			break;
+
+		case "Bear":
+			tempSprite = Resources.Load<Sprite> ("Textures/Icons/Bear");
+			break;
+
+		case "Fox":
+			tempSprite = Resources.Load<Sprite> ("Textures/Icons/Fox");
+			break;
+		}
+
+		// Set Icon UI Size
+		tempIcon.rectTransform.sizeDelta = new Vector2(tempSprite.rect.width / tempSprite.rect.height * 20, 20);
+		tempIcon.sprite = tempSprite;
+		//print (tempSprite.rect);
+		//print (tempIcon.rectTransform.rect);
 	}
 
 	// Update is called once per frame
@@ -51,20 +101,26 @@ public class CameraScript : MonoBehaviour {
 		GameObject echoText3 = GameObject.Find ("Animal3");
 		UnityEngine.UI.Text gui3 = echoText3.GetComponent<UnityEngine.UI.Text> ();
 
-      
 		if (animalCount1 >= winConditionAnimal1 && animalCount2 >= winConditionAnimal2 && animalCount3 >= winConditionAnimal3) {
 			if (currentLevel == "One") {
 				SceneManager.LoadScene ("WinScreen1");
 			} else {
 				SceneManager.LoadScene ("WinScreen2");
 			}
-		} else {
-			
+		} 
+		else 
+		{
+			/*
 			gui.text = animal1 + " Scanned " + animalCount1 + " / " + winConditionAnimal1;
 			gui2.text = animal2 + " Scanned " + animalCount2 + " / " + winConditionAnimal2;
 			gui3.text = animal3 + " Scanned " + animalCount3 + " / " + winConditionAnimal3;
+			*/
+
+			gui.text = animalCount1 + " / " + winConditionAnimal1;
+			gui2.text = animalCount2 + " / " + winConditionAnimal2;
+			gui3.text = animalCount2 + " / " + winConditionAnimal3;
 		}
-      
+			
 		float posX = Mathf.SmoothDamp (transform.position.x, player.transform.position.x, ref velocity.x, smoothTime);
 		float posY = Mathf.SmoothDamp (transform.position.y, player.transform.position.y, ref velocity.y, smoothTime);
       
